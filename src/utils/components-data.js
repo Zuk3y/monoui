@@ -41,7 +41,8 @@ export const components = [
       {
         name: 'Alerts',
         link: '/components/ui-elements/alerts',
-        description: 'Inform users about important actions, system messages, or feedback with styled alert components.',
+        description:
+          'Inform users about important actions, system messages, or feedback with styled alert components.',
         data: [
           {
             name: 'Basic',
@@ -65,7 +66,8 @@ export const components = [
       {
         name: 'Avatars',
         link: '/components/ui-elements/avatars',
-        description: 'Display user profile images or placeholders in a compact and customizable format.',
+        description:
+          'Display user profile images or placeholders in a compact and customizable format.',
         data: [
           {
             name: 'Basic',
@@ -103,7 +105,8 @@ export const components = [
       {
         name: 'Badges',
         link: '/components/ui-elements/badges',
-        description: 'Highlight statuses, labels, or notifications with small, colorful indicators.',
+        description:
+          'Highlight statuses, labels, or notifications with small, colorful indicators.',
         data: [
           {
             name: 'Basic',
@@ -155,7 +158,8 @@ export const components = [
       {
         name: 'Breadcrumbs',
         link: '/components/ui-elements/breadcrumbs',
-        description: 'Show the users navigation path and improve site structure visibility with breadcrumb trails.',
+        description:
+          'Show the users navigation path and improve site structure visibility with breadcrumb trails.',
         data: [
           {
             name: 'Basic',
@@ -172,7 +176,8 @@ export const components = [
       {
         name: 'Buttons',
         link: '/components/ui-elements/buttons',
-        description: 'Trigger actions with versatile, accessible, and customizable button components.',
+        description:
+          'Trigger actions with versatile, accessible, and customizable button components.',
         data: [
           {
             name: 'Basic',
@@ -196,7 +201,8 @@ export const components = [
       {
         name: 'Cards',
         link: '/components/ui-elements/cards',
-        description: 'Organize content into flexible containers, perfect for previews, profiles, or product info.',
+        description:
+          'Organize content into flexible containers, perfect for previews, profiles, or product info.',
         data: [
           {
             name: 'Basic',
@@ -262,7 +268,8 @@ export const components = [
       {
         name: 'Cookies',
         link: '/components/ui-elements/cookies',
-        description: 'Notify users about cookie usage and consent with sleek, dismissible banners.',
+        description:
+          'Notify users about cookie usage and consent with sleek, dismissible banners.',
         data: [
           {
             name: 'With emoji',
@@ -286,7 +293,8 @@ export const components = [
       {
         name: 'Images',
         link: '/components/ui-elements/images',
-        description: 'Display images responsively with optional styling for aspect ratio, borders, and shadows.',
+        description:
+          'Display images responsively with optional styling for aspect ratio, borders, and shadows.',
         data: [
           {
             name: 'Basic',
@@ -324,7 +332,8 @@ export const components = [
       {
         name: 'Modals',
         link: '/components/ui-elements/modals',
-        description: 'Create layered dialogs for confirmations, forms, or extra content without navigating away.',
+        description:
+          'Create layered dialogs for confirmations, forms, or extra content without navigating away.',
         data: [
           {
             name: 'Basic with button',
@@ -341,7 +350,8 @@ export const components = [
       {
         name: 'Navbars',
         link: '/components/ui-elements/navbars',
-        description: 'Build responsive navigation headers with links, branding, and optional actions.',
+        description:
+          'Build responsive navigation headers with links, branding, and optional actions.',
         data: [
           {
             name: 'Basic',
@@ -358,7 +368,8 @@ export const components = [
       {
         name: 'Paginations',
         link: '/components/ui-elements/pagination',
-        description: 'Divide content into manageable sections with navigable pagination controls.',
+        description:
+          'Divide content into manageable sections with navigable pagination controls.',
         data: [
           {
             name: 'Basic',
@@ -375,7 +386,8 @@ export const components = [
       {
         name: 'Sidebars',
         link: '/components/ui-elements/sidebars',
-        description: 'Add collapsible or fixed side panels for navigation or supplementary content.',
+        description:
+          'Add collapsible or fixed side panels for navigation or supplementary content.',
         data: [
           {
             name: 'Basic',
@@ -392,7 +404,8 @@ export const components = [
       {
         name: 'Tables',
         link: '/components/ui-elements/tables',
-        description: 'Present structured data with clean, styled, and responsive table layouts.',
+        description:
+          'Present structured data with clean, styled, and responsive table layouts.',
         data: [
           {
             name: 'Spaced',
@@ -430,7 +443,8 @@ export const components = [
       {
         name: 'Forms',
         link: '/components/forms/forms',
-        description: 'Combine inputs, buttons, and layout components to build full-featured, accessible forms.',
+        description:
+          'Combine inputs, buttons, and layout components to build full-featured, accessible forms.',
         data: [
           {
             name: 'Contact Us',
@@ -447,7 +461,8 @@ export const components = [
       {
         name: 'Inputs',
         link: '/components/forms/inputs',
-        description: 'Collect user data with styled text fields, checkboxes, radios, and more.',
+        description:
+          'Collect user data with styled text fields, checkboxes, radios, and more.',
         data: [
           {
             name: 'Basic',
@@ -478,7 +493,8 @@ export const components = [
       {
         name: 'Sign in',
         link: '/components/forms/sign-in',
-        description: 'Provide users with a secure, clean interface to log into their account.',
+        description:
+          'Provide users with a secure, clean interface to log into their account.',
         data: [
           {
             name: 'Basic',
@@ -495,7 +511,8 @@ export const components = [
       {
         name: 'Register',
         link: '/components/forms/register',
-        description: 'Allow users to create new accounts with a simple and user-friendly registration form.',
+        description:
+          'Allow users to create new accounts with a simple and user-friendly registration form.',
         data: [
           {
             name: 'Basic',
@@ -512,7 +529,8 @@ export const components = [
       {
         name: 'Skeleton',
         link: '/components/forms/skeleton',
-        description: 'Display animated placeholders while loading content to improve perceived performance.',
+        description:
+          'Display animated placeholders while loading content to improve perceived performance.',
         data: [
           {
             name: 'Basic',
@@ -536,7 +554,8 @@ export const components = [
       {
         name: '404 Pages',
         link: '/components/pages/404-pages',
-        description: 'Guide users back on track with visually engaging “Page Not Found” templates.',
+        description:
+          'Guide users back on track with visually engaging “Page Not Found” templates.',
         data: [
           {
             name: 'Basic',
@@ -553,7 +572,8 @@ export const components = [
       {
         name: 'Blog',
         link: '/components/pages/blog',
-        description: 'Show blog posts with clean layouts optimized for readability and engagement.',
+        description:
+          'Show blog posts with clean layouts optimized for readability and engagement.',
         data: [
           {
             name: 'Basic with heading, image and text',
@@ -570,7 +590,8 @@ export const components = [
       {
         name: 'Contact',
         link: '/components/pages/contact',
-        description: 'Let users reach out with form-based or informational contact page designs.',
+        description:
+          'Let users reach out with form-based or informational contact page designs.',
         data: [
           {
             name: 'Simple with text and form',
@@ -587,7 +608,8 @@ export const components = [
       {
         name: 'FAQ',
         link: '/components/pages/faq',
-        description: 'Answer common questions clearly with toggle-based or list-based FAQ sections.',
+        description:
+          'Answer common questions clearly with toggle-based or list-based FAQ sections.',
         data: [
           {
             name: 'Simple with expand',
@@ -604,7 +626,8 @@ export const components = [
       {
         name: 'Features',
         link: '/components/pages/features',
-        description: 'Highlight product or service features with structured and attractive layouts.',
+        description:
+          'Highlight product or service features with structured and attractive layouts.',
         data: [
           {
             name: 'Simple with heading and feature blocks',
@@ -621,7 +644,8 @@ export const components = [
       {
         name: 'Footers',
         link: '/components/pages/footers',
-        description: 'Add site-wide footers with navigation, contact info, and legal links.',
+        description:
+          'Add site-wide footers with navigation, contact info, and legal links.',
         data: [
           {
             name: 'Simple with text and links',
@@ -638,7 +662,8 @@ export const components = [
       {
         name: 'Heros',
         link: '/components/pages/heros',
-        description: 'Create attention-grabbing headers for landing pages with call-to-action and imagery.',
+        description:
+          'Create attention-grabbing headers for landing pages with call-to-action and imagery.',
         data: [
           {
             name: 'Simple with image, text and buttons',
@@ -662,7 +687,8 @@ export const components = [
       {
         name: 'Portfolio',
         link: '/components/pages/portfolio',
-        description: 'Showcase projects, case studies, or work samples with elegant layouts.',
+        description:
+          'Showcase projects, case studies, or work samples with elegant layouts.',
         data: [
           {
             name: 'Simple with heading and hover effect',
@@ -679,7 +705,8 @@ export const components = [
       {
         name: 'Pricing',
         link: '/components/pages/pricing',
-        description: 'Compare plans or offers using visually balanced pricing tables and cards.',
+        description:
+          'Compare plans or offers using visually balanced pricing tables and cards.',
         data: [
           {
             name: 'Simple with heading',
@@ -696,7 +723,8 @@ export const components = [
       {
         name: 'Teams',
         link: '/components/pages/teams',
-        description: 'Introduce team members with styled profiles, roles, and social links.',
+        description:
+          'Introduce team members with styled profiles, roles, and social links.',
         data: [
           {
             name: 'Simple with heading and blocks',
@@ -713,7 +741,8 @@ export const components = [
       {
         name: 'Testimonials',
         link: '/components/pages/testimonials',
-        description: 'Build trust with customer or client feedback in carousel or grid formats.',
+        description:
+          'Build trust with customer or client feedback in carousel or grid formats.',
         data: [
           {
             name: 'Basic',

@@ -27,7 +27,7 @@ const Sidebar = () => {
               width={24}
               height={24}
               alt="Logo"
-              className='rounded-md'
+              className="rounded-md"
               style={{ height: '24' }}
             />
             <Link href="/components" className="text-lg font-bold text-black">

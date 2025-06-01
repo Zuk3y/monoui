@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
 import './globals.css';
 import React from 'react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 
 const nunitoText = Nunito({
@@ -12,7 +12,7 @@ const nunitoText = Nunito({
 });
 
 export const generateMetadata = (): Metadata => {
-  const title = 'MonoUI – Beautiful Tailwind CSS v4 Components';
+  const title = 'MonoUI - Beautiful Tailwind CSS v4 Components';
   const description =
     'MonoUI is a fast, modern component library for Tailwind CSS v4. Build stunning, responsive interfaces in minutes with plug-and-play React components.';
 
