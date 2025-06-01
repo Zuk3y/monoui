@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
 import './globals.css';
 import React from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const nunitoText = Nunito({
   weight: 'variable',
@@ -53,6 +54,7 @@ export default function RootLayout({
         <div className="">
           <div className="z-100">{children}</div>
         </div>
+        <SpeedInsights />
       </body>
     </html>
   );
