@@ -23,11 +23,12 @@ const Sidebar = () => {
         <div className="flex h-full flex-col">
           <div className="flex items-center gap-2 border-b border-gray-200 p-4">
             <Image
-              src="/whitemode.svg"
-              width={20}
-              height={20}
+              src="/logo.svg"
+              width={24}
+              height={24}
               alt="Logo"
-              style={{ height: '20px' }}
+              className='rounded-md'
+              style={{ height: '24' }}
             />
             <Link href="/components" className="text-lg font-bold text-black">
               MonoUI
