@@ -1,0 +1,132 @@
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #e0e0e0;
+	background: none;
+	font-family: 'Fira Code', 'Cascadia Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"] {
+	padding: 1.2em;
+	margin: .8em 0;
+	overflow: auto;
+	border-radius: 0.5em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #1a1a2e;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+:not(pre) > code[class*="language-"] {
+	padding: .2em .4em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+/* --- Syntax Highlighting --- */
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #5b6a80;
+	font-style: italic;
+}
+
+.token.punctuation {
+	color: #a0a0a0;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+	color: #ff6b6b;
+}
+
+.token.function-name {
+	color: #64e7c0;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+	color: #a270d4;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+	color: #ffd166;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+	color: #7b9edb;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+	color: #8be9fd;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+	color: #ff9f75;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.inserted {
+	color: #5be09b;
+}
+
+.token.line-highlight {
+	background-color: rgba(123, 158, 219, 0.2);
+	border-left: 3px solid #7b9edb;
+}
+
+.token.line-numbers .line-numbers-rows {
+	border-right: 1px solid #3a3a4c;
+}
+
+.token.line-numbers .line-numbers-rows > span:before {
+	color: #5b6a80;
+}
