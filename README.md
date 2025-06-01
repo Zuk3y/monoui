@@ -2,7 +2,7 @@
 
 A modern, easy-to-use Tailwind CSS UI library designed to streamline your development process.
 
-![MonoUI Preview](https://monoui.dev/og.jpg)
+![MonoUI Preview](https://monoui.vercel.app/og.jpg)
 
 ## Table of Contents
 

@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.8",
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "isomorphic-dompurify": "^2.25.0",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
