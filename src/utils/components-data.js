@@ -41,7 +41,7 @@ export const components = [
       {
         name: 'Alerts',
         link: '/components/ui-elements/alerts',
-        description: 'Description',
+        description: 'Inform users about important actions, system messages, or feedback with styled alert components.',
         data: [
           {
             name: 'Basic',
@@ -51,7 +51,7 @@ export const components = [
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Informative',
             path: '/components/ui-elements/alerts/2.html',
             fullPage: false,
             height: 400,
@@ -65,7 +65,7 @@ export const components = [
       {
         name: 'Avatars',
         link: '/components/ui-elements/avatars',
-        description: 'Description',
+        description: 'Display user profile images or placeholders in a compact and customizable format.',
         data: [
           {
             name: 'Basic',
@@ -75,21 +75,21 @@ export const components = [
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Border',
             path: '/components/ui-elements/avatars/2.html',
             fullPage: false,
             height: 100,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Indicator',
             path: '/components/ui-elements/avatars/3.html',
             fullPage: false,
             height: 300,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Profile',
             path: '/components/ui-elements/avatars/4.html',
             fullPage: false,
             height: 100,
@@ -103,7 +103,7 @@ export const components = [
       {
         name: 'Badges',
         link: '/components/ui-elements/badges',
-        description: 'Description',
+        description: 'Highlight statuses, labels, or notifications with small, colorful indicators.',
         data: [
           {
             name: 'Basic',
@@ -113,35 +113,35 @@ export const components = [
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Tag',
             path: '/components/ui-elements/badges/2.html',
             fullPage: false,
             height: 100,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Flat',
             path: '/components/ui-elements/badges/3.html',
             fullPage: false,
             height: 100,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Flat with icon',
             path: '/components/ui-elements/badges/4.html',
             fullPage: false,
             height: 100,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Flat themed',
             path: '/components/ui-elements/badges/5.html',
             fullPage: false,
             height: 100,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Flat themed with icons',
             path: '/components/ui-elements/badges/6.html',
             fullPage: false,
             height: 100,
@@ -155,7 +155,7 @@ export const components = [
       {
         name: 'Breadcrumbs',
         link: '/components/ui-elements/breadcrumbs',
-        description: 'Description',
+        description: 'Show the users navigation path and improve site structure visibility with breadcrumb trails.',
         data: [
           {
             name: 'Basic',
@@ -172,18 +172,18 @@ export const components = [
       {
         name: 'Buttons',
         link: '/components/ui-elements/buttons',
-        description: 'Description',
+        description: 'Trigger actions with versatile, accessible, and customizable button components.',
         data: [
           {
             name: 'Basic',
-            path: '/components/ui-elements/buttons/2.html',
+            path: '/components/ui-elements/buttons/1.html',
             fullPage: false,
             height: 100,
             requiresJS: false,
           },
           {
-            name: 'Basic',
-            path: '/components/ui-elements/buttons/3.html',
+            name: 'Inverted',
+            path: '/components/ui-elements/buttons/2.html',
             fullPage: false,
             height: 100,
             requiresJS: false,
@@ -196,7 +196,7 @@ export const components = [
       {
         name: 'Cards',
         link: '/components/ui-elements/cards',
-        description: 'Description',
+        description: 'Organize content into flexible containers, perfect for previews, profiles, or product info.',
         data: [
           {
             name: 'Basic',
@@ -206,49 +206,49 @@ export const components = [
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Card with image',
             path: '/components/ui-elements/cards/2.html',
             fullPage: false,
             height: 400,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Card with footer',
             path: '/components/ui-elements/cards/3.html',
             fullPage: false,
             height: 300,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Card with button',
             path: '/components/ui-elements/cards/4.html',
             fullPage: false,
             height: 300,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Card with image and button',
             path: '/components/ui-elements/cards/5.html',
             fullWidth: false,
             height: 500,
             requiresJS: false,
           },
           {
-            name: 'Basic with badge and button',
+            name: 'Card with badge',
             path: '/components/ui-elements/cards/6.html',
             fullPage: false,
             height: 300,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Stats card 1',
             path: '/components/ui-elements/cards/7.html',
             fullPage: false,
             height: 300,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Stats card 2',
             path: '/components/ui-elements/cards/8.html',
             fullPage: false,
             height: 300,
@@ -262,17 +262,17 @@ export const components = [
       {
         name: 'Cookies',
         link: '/components/ui-elements/cookies',
-        description: 'Description',
+        description: 'Notify users about cookie usage and consent with sleek, dismissible banners.',
         data: [
           {
-            name: 'Basic',
+            name: 'With emoji',
             path: '/components/ui-elements/cookies/1.html',
             fullPage: false,
             height: 400,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'With icon',
             path: '/components/ui-elements/cookies/2.html',
             fullPage: false,
             height: 400,
@@ -286,7 +286,7 @@ export const components = [
       {
         name: 'Images',
         link: '/components/ui-elements/images',
-        description: 'Description',
+        description: 'Display images responsively with optional styling for aspect ratio, borders, and shadows.',
         data: [
           {
             name: 'Basic',
@@ -296,21 +296,21 @@ export const components = [
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Image with hover',
             path: '/components/ui-elements/images/2.html',
             fullPage: false,
             height: 400,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Image with Text on hover',
             path: '/components/ui-elements/images/3.html',
             fullPage: false,
             height: 400,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Image with complex hover',
             path: '/components/ui-elements/images/4.html',
             fullPage: false,
             height: 400,
@@ -324,10 +324,10 @@ export const components = [
       {
         name: 'Modals',
         link: '/components/ui-elements/modals',
-        description: 'Description',
+        description: 'Create layered dialogs for confirmations, forms, or extra content without navigating away.',
         data: [
           {
-            name: 'Basic',
+            name: 'Basic with button',
             path: '/components/ui-elements/modals/1.html',
             fullPage: false,
             height: 300,
@@ -341,7 +341,7 @@ export const components = [
       {
         name: 'Navbars',
         link: '/components/ui-elements/navbars',
-        description: 'Description',
+        description: 'Build responsive navigation headers with links, branding, and optional actions.',
         data: [
           {
             name: 'Basic',
@@ -358,7 +358,7 @@ export const components = [
       {
         name: 'Paginations',
         link: '/components/ui-elements/pagination',
-        description: 'Description',
+        description: 'Divide content into manageable sections with navigable pagination controls.',
         data: [
           {
             name: 'Basic',
@@ -375,7 +375,7 @@ export const components = [
       {
         name: 'Sidebars',
         link: '/components/ui-elements/sidebars',
-        description: 'Description',
+        description: 'Add collapsible or fixed side panels for navigation or supplementary content.',
         data: [
           {
             name: 'Basic',
@@ -392,24 +392,24 @@ export const components = [
       {
         name: 'Tables',
         link: '/components/ui-elements/tables',
-        description: 'Description',
+        description: 'Present structured data with clean, styled, and responsive table layouts.',
         data: [
           {
-            name: 'Basic',
+            name: 'Spaced',
             path: '/components/ui-elements/tables/1.html',
             fullPage: false,
             height: 500,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Compact',
             path: '/components/ui-elements/tables/2.html',
             fullPage: false,
             height: 500,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Invoice',
             path: '/components/ui-elements/tables/3.html',
             fullPage: false,
             height: 500,
@@ -430,10 +430,10 @@ export const components = [
       {
         name: 'Forms',
         link: '/components/forms/forms',
-        description: 'Description',
+        description: 'Combine inputs, buttons, and layout components to build full-featured, accessible forms.',
         data: [
           {
-            name: 'Basic',
+            name: 'Contact Us',
             path: '/components/forms/forms/1.html',
             fullPage: false,
             height: 700,
@@ -447,7 +447,7 @@ export const components = [
       {
         name: 'Inputs',
         link: '/components/forms/inputs',
-        description: 'Description',
+        description: 'Collect user data with styled text fields, checkboxes, radios, and more.',
         data: [
           {
             name: 'Basic',
@@ -457,14 +457,14 @@ export const components = [
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Input with button',
             path: '/components/forms/inputs/2.html',
             fullPage: false,
             height: 200,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Disabled',
             path: '/components/forms/inputs/3.html',
             fullPage: false,
             height: 200,
@@ -478,7 +478,7 @@ export const components = [
       {
         name: 'Sign in',
         link: '/components/forms/sign-in',
-        description: 'Description',
+        description: 'Provide users with a secure, clean interface to log into their account.',
         data: [
           {
             name: 'Basic',
@@ -495,7 +495,7 @@ export const components = [
       {
         name: 'Register',
         link: '/components/forms/register',
-        description: 'Description',
+        description: 'Allow users to create new accounts with a simple and user-friendly registration form.',
         data: [
           {
             name: 'Basic',
@@ -512,7 +512,7 @@ export const components = [
       {
         name: 'Skeleton',
         link: '/components/forms/skeleton',
-        description: 'Description',
+        description: 'Display animated placeholders while loading content to improve perceived performance.',
         data: [
           {
             name: 'Basic',
@@ -536,7 +536,7 @@ export const components = [
       {
         name: '404 Pages',
         link: '/components/pages/404-pages',
-        description: 'Description',
+        description: 'Guide users back on track with visually engaging “Page Not Found” templates.',
         data: [
           {
             name: 'Basic',
@@ -553,10 +553,10 @@ export const components = [
       {
         name: 'Blog',
         link: '/components/pages/blog',
-        description: 'Description',
+        description: 'Show blog posts with clean layouts optimized for readability and engagement.',
         data: [
           {
-            name: 'Basic',
+            name: 'Basic with heading, image and text',
             path: '/components/pages/blog/1.html',
             fullPage: true,
             height: 600,
@@ -570,10 +570,10 @@ export const components = [
       {
         name: 'Contact',
         link: '/components/pages/contact',
-        description: 'Description',
+        description: 'Let users reach out with form-based or informational contact page designs.',
         data: [
           {
-            name: 'Basic',
+            name: 'Simple with text and form',
             path: '/components/pages/contact/1.html',
             fullPage: true,
             height: 700,
@@ -587,14 +587,14 @@ export const components = [
       {
         name: 'FAQ',
         link: '/components/pages/faq',
-        description: 'Description',
+        description: 'Answer common questions clearly with toggle-based or list-based FAQ sections.',
         data: [
           {
-            name: 'Basic',
+            name: 'Simple with expand',
             path: '/components/pages/faq/1.html',
             fullPage: true,
             height: 400,
-            requiresJS: false,
+            requiresJS: true,
           },
         ],
         icon: HelpCircle,
@@ -604,10 +604,10 @@ export const components = [
       {
         name: 'Features',
         link: '/components/pages/features',
-        description: 'Description',
+        description: 'Highlight product or service features with structured and attractive layouts.',
         data: [
           {
-            name: 'Basic',
+            name: 'Simple with heading and feature blocks',
             path: '/components/pages/features/1.html',
             fullPage: true,
             height: 500,
@@ -621,10 +621,10 @@ export const components = [
       {
         name: 'Footers',
         link: '/components/pages/footers',
-        description: 'Description',
+        description: 'Add site-wide footers with navigation, contact info, and legal links.',
         data: [
           {
-            name: 'Basic',
+            name: 'Simple with text and links',
             path: '/components/pages/footers/1.html',
             fullPage: true,
             height: 400,
@@ -638,17 +638,17 @@ export const components = [
       {
         name: 'Heros',
         link: '/components/pages/heros',
-        description: 'Description',
+        description: 'Create attention-grabbing headers for landing pages with call-to-action and imagery.',
         data: [
           {
-            name: 'Basic',
+            name: 'Simple with image, text and buttons',
             path: '/components/pages/heros/1.html',
             fullPage: true,
             height: 500,
             requiresJS: false,
           },
           {
-            name: 'Basic',
+            name: 'Simple with image, text and buttons 2',
             path: '/components/pages/heros/2.html',
             fullPage: true,
             height: 600,
@@ -662,10 +662,10 @@ export const components = [
       {
         name: 'Portfolio',
         link: '/components/pages/portfolio',
-        description: 'Description',
+        description: 'Showcase projects, case studies, or work samples with elegant layouts.',
         data: [
           {
-            name: 'Basic',
+            name: 'Simple with heading and hover effect',
             path: '/components/pages/portfolio/1.html',
             fullPage: true,
             height: 800,
@@ -679,10 +679,10 @@ export const components = [
       {
         name: 'Pricing',
         link: '/components/pages/pricing',
-        description: 'Description',
+        description: 'Compare plans or offers using visually balanced pricing tables and cards.',
         data: [
           {
-            name: 'Basic',
+            name: 'Simple with heading',
             path: '/components/pages/pricing/1.html',
             fullPage: true,
             height: 600,
@@ -696,10 +696,10 @@ export const components = [
       {
         name: 'Teams',
         link: '/components/pages/teams',
-        description: 'Description',
+        description: 'Introduce team members with styled profiles, roles, and social links.',
         data: [
           {
-            name: 'Basic',
+            name: 'Simple with heading and blocks',
             path: '/components/pages/teams/1.html',
             fullPage: true,
             height: 400,
@@ -713,7 +713,7 @@ export const components = [
       {
         name: 'Testimonials',
         link: '/components/pages/testimonials',
-        description: 'Description',
+        description: 'Build trust with customer or client feedback in carousel or grid formats.',
         data: [
           {
             name: 'Basic',

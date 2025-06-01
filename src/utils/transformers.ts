@@ -10,7 +10,7 @@ export function componentPreviewHtml(
   const bodyClass = `flex items-center flex-1 w-full overflow-x-hidden min-h-full bg-white dark:bg-black`;
   const isFullPage = fullPage
     ? `w-full`
-    : `w-full max-w-lg mx-auto p-4 overflow-x-auto flex flex-col items-center justify-center`;
+    : `w-full max-w-4xl mx-auto p-4 overflow-x-auto flex flex-col items-center justify-center`;
   const pattern = showPattern ? `pattern` : '';
 
   return `
