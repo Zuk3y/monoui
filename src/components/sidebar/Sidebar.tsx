@@ -34,7 +34,7 @@ const Sidebar = () => {
               MonoUI
             </Link>
           </div>
-          <nav className="flex-1 space-y-8 overflow-y-auto px-4 pt-4 pb-8">
+          <nav className="flex-1 space-y-8 overflow-y-auto p-4">
             {components.map((category, index) => (
               <div key={index}>
                 <div className="mb-3 flex items-center gap-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
@@ -45,7 +45,7 @@ const Sidebar = () => {
                 </div>
                 <ul className="space-y-1.5">
                   {category.items.map(
-                    ({ name, link, icon: Icon, tag, updated }, i) => (
+                    ({ name, link, icon: Icon, tag, updated, data }, i) => (
                       <li key={i}>
                         <Link
                           href={link}
@@ -57,16 +57,23 @@ const Sidebar = () => {
                               className="text-gray-500 transition group-hover:text-blue-500"
                             />
                             <span>{name}</span>
+                            {tag && (
+                              <span className="rounded-full bg-purple-100 px-2 py-0.5 text-xs text-purple-700">
+                                New
+                              </span>
+                            )}
+                            {updated && (
+                              <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">
+                                Updated
+                              </span>
+                            )}
                           </div>
-                          {tag && (
-                            <span className="rounded-full bg-purple-100 px-2 py-0.5 text-xs text-purple-700">
-                              New
-                            </span>
-                          )}
-                          {updated && (
-                            <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs text-emerald-700">
-                              Updated
-                            </span>
+                          {data.length && (
+                            <>
+                              <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs text-blue-700">
+                                {data.length}
+                              </span>
+                            </>
                           )}
                         </Link>
                       </li>
