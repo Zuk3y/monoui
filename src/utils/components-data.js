@@ -10,9 +10,7 @@ import {
   CreditCard,
   Cookie,
   SquareDashedBottom,
-  Layout,
   ChevronsRight,
-  PanelLeft,
   Table,
   FileInput,
   Type,
@@ -24,7 +22,6 @@ import {
   Mail,
   HelpCircle,
   Sparkles,
-  LayoutTemplate,
   Image as ImageIcon,
   Briefcase,
   Tags,
@@ -32,7 +29,6 @@ import {
   MessageSquare,
   LayoutDashboard,
   PanelBottom,
-  PanelTop,
   Grid2x2
 } from 'lucide-react';
 
