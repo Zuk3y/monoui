@@ -1,4 +1,4 @@
-import { components } from '@/utils/components-data';
+import { components } from '@utils/components-data';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 

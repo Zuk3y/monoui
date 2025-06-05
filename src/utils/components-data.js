@@ -29,7 +29,7 @@ import {
   MessageSquare,
   LayoutDashboard,
   PanelBottom,
-  Grid2x2
+  Grid2x2,
 } from 'lucide-react';
 
 export const components = [

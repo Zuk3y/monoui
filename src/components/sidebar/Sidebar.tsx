@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useSidebarStore } from '@/components/sidebar/sidebarStore';
-import { components } from '@/utils/components-data';
+import { useSidebarStore } from '@components/sidebar/sidebarStore';
+import { components } from '@utils/components-data';
 
 const Sidebar = () => {
   const { isOpen, toggleSidebar } = useSidebarStore();

@@ -1,6 +1,6 @@
 'use client';
 
-import ComponentPreview from '@/components/misc/ComponentPreview';
+import ComponentPreview from '@components/misc/ComponentPreview';
 
 interface ComponentData {
   id: number;

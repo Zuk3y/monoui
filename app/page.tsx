@@ -1,7 +1,7 @@
-import { countAllComponents } from '@/utils/counter';
+import { countAllComponents } from '@utils/counter';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Footer from '@/components/footer/Footer';
+import Footer from '@components/footer/Footer';
 
 export const generateMetadata = (): Metadata => {
   return {
@@ -11,8 +11,9 @@ export const generateMetadata = (): Metadata => {
   };
 };
 
-export default function Home() {
+export default async function Home() {
   const totalComponents = countAllComponents();
+
   return (
     <>
       <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100">

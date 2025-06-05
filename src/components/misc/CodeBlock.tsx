@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import Prism from 'prismjs';
-import '@/styles/monoui.css';
+import '@styles/monoui.css';
 import 'prismjs/components/prism-jsx';
 
 type CodeBlockProps = {

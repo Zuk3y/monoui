@@ -1,5 +1,5 @@
 import React from 'react';
-import { components } from '@/utils/components-data';
+import { components } from '@utils/components-data';
 import Link from 'next/link';
 import { Metadata } from 'next';
 

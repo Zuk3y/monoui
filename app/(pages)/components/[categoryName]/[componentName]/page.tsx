@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { components } from '@/utils/components-data';
-import PreviewWrapper from '@/components/misc/PreviewWrapper';
+import { components } from '@utils/components-data';
+import PreviewWrapper from '@components/misc/PreviewWrapper';
 import { LucideIcon } from 'lucide-react';
 import { redirect } from 'next/navigation';
 

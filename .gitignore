@@ -39,7 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-src/app/guide/page.tsx
+app/guide/page.tsx
 public/components/sandbox
 .vscode/settings.json
 .idea/inspectionProfiles/Project_Default.xml

@@ -3,7 +3,7 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { useSidebarStore } from '@/components/sidebar/sidebarStore';
+import { useSidebarStore } from '@components/sidebar/sidebarStore';
 import { House, PanelLeftOpen } from 'lucide-react';
 
 const Navbar = () => {

@@ -1,7 +1,7 @@
 'use client';
 
 import clsx from 'clsx';
-import CodeBlock from '@/components/misc/CodeBlock';
+import CodeBlock from '@components/misc/CodeBlock';
 
 const SIZES = {
   mobile: 'w-[360px]',

@@ -1,5 +1,5 @@
-import { components } from '@/utils/components-data';
-import CategoryPage from '@/components/misc/CategoryPage';
+import { components } from '@utils/components-data';
+import CategoryPage from '@components/misc/CategoryPage';
 
 export async function generateMetadata({
   params,

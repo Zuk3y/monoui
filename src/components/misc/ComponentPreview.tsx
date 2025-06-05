@@ -1,11 +1,11 @@
 'use client';
 
 import { useEffect, useState, useCallback, useMemo } from 'react';
-import { componentPreviewHtml, rawToJsx } from '@/utils/transformers';
-import CopyCodeButton from '@/components/misc/CopyCodeButton';
-import PreviewContent from '@/components/misc/PreviewContent';
-import PreviewHeader from '@/components/misc/PreviewHeader';
-import PreviewToolbar from '@/components/misc/PreviewToolbar';
+import { componentPreviewHtml, rawToJsx } from '@utils/transformers';
+import CopyCodeButton from '@components/misc/CopyCodeButton';
+import PreviewContent from '@components/misc/PreviewContent';
+import PreviewHeader from '@components/misc/PreviewHeader';
+import PreviewToolbar from '@components/misc/PreviewToolbar';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const SIZES = {
