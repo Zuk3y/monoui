@@ -7,9 +7,7 @@ interface CategoryPageProps {
 }
 
 export default function CategoryPage({ categoryName }: CategoryPageProps) {
-  const category = components.find(
-    (c) => c.category.toLowerCase() === categoryName.toLowerCase()
-  );
+  const category = components.find((c) => c.category_slug === categoryName);
 
   if (!category) {
     redirect('/not-found');
@@ -25,6 +23,7 @@ export default function CategoryPage({ categoryName }: CategoryPageProps) {
           Discover all {category.category} available in MonoUI.
         </p>
       </div>
+
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {category.items.map(({ name, link, icon: Icon }) => (
           <li key={name}>

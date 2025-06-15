@@ -74,6 +74,10 @@ export default async function ComponentSlugPage({
     return parts[parts.length - 1] === componentName;
   }) as ComponentItem | undefined;
 
+  if (!category || !component) {
+    redirect('/not-found');
+  }
+
   const demos: {
     id: number;
     name: string;
@@ -104,10 +108,6 @@ export default async function ComponentSlugPage({
         console.error(`Failed to load demo "${entry.name}":`, error);
       }
     }
-  }
-
-  if (!category || !component) {
-    redirect('/not-found');
   }
 
   return (

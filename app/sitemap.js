@@ -1,6 +1,6 @@
 import { components } from 'src/utils/components-data';
 
-export default async function sitemap() {
+export default function sitemap() {
   const categoryLinks = components.map(({ category_slug }) => ({
     url: `https://www.monoui.dev/components/${category_slug}`,
     lastModified: new Date(),

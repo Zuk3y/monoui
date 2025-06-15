@@ -26,14 +26,9 @@ export default async function CategorySlugPage({
   params: Promise<{ categoryName: string }>;
 }) {
   const { categoryName } = await params;
-  const category = categoryName
-    .split('-')
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(' ');
-
   return (
     <>
-      <CategoryPage categoryName={category} />
+      <CategoryPage categoryName={categoryName} />
     </>
   );
 }

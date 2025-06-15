@@ -39,7 +39,7 @@ export function componentPreviewHtml(
         }
 
         a, button {
-            pointer-event: none;
+            pointer-events: none;
             cursor: pointer;
         }
 
