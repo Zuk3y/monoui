@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/((?!coming-soon).*)",
-      "destination": "https://www.monoui.dev/coming-soon",
-      "permanent": false
-    }
-  ]
-}
