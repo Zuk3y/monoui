@@ -49,3 +49,4 @@ public/components/sandbox
 .idea/modules.xml
 .idea/jsLibraryMappings.xml
 .idea/workspace.xml
+.env*.local
