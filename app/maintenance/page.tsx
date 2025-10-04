@@ -1,4 +1,4 @@
-export default function ComingSoonPage() {
+export default function MaintenancePage() {
     return (
         <>
             <div>
