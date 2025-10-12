@@ -1,7 +1,6 @@
 import {
   LayoutGrid,
   ShieldCheck,
-  FileText,
   AlertCircle,
   UserCircle,
   Award,
@@ -9,7 +8,6 @@ import {
   SquareMousePointer,
   CreditCard,
   Cookie,
-  SquareDashedBottom,
   ChevronsRight,
   Table,
   FileInput,
@@ -17,19 +15,7 @@ import {
   LogIn,
   UserPlus,
   Loader,
-  AlertTriangle,
-  Newspaper,
-  Mail,
-  HelpCircle,
-  Sparkles,
   Image as ImageIcon,
-  Briefcase,
-  Tags,
-  Users,
-  MessageSquare,
-  LayoutDashboard,
-  PanelBottom,
-  Grid2x2,
 } from 'lucide-react';
 
 export const components = [

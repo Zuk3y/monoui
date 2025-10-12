@@ -87,7 +87,7 @@ export default async function Home() {
             </div>
             <div className="rounded-lg border border-neutral-700 bg-neutral-800 p-6 shadow-sm transition hover:shadow-md">
               <h3 className="mb-2 text-xl font-semibold text-neutral-100">How do I use MonoUI?</h3>
-              <p className="text-sm text-neutral-400">Choose a component you like, copy the code, and paste it into your project. That's it!</p>
+              <p className="text-sm text-neutral-400">Choose a component you like, copy the code, and paste it into your project.</p>
             </div>
             <div className="rounded-lg border border-neutral-700 bg-neutral-800 p-6 shadow-sm transition hover:shadow-md">
               <h3 className="mb-2 text-xl font-semibold text-neutral-100">Do I need to install any dependencies?</h3>
