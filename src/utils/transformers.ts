@@ -1,21 +1,12 @@
 import DOMPurify from 'isomorphic-dompurify';
-export function componentPreviewHtml(
-  rawHTML: string,
-  darkmode: boolean,
-  showPattern: boolean,
-  fullPage: boolean
-) {
+export function componentPreviewHtml(rawHTML: string, fullPage: boolean) {
   const componentHtml = DOMPurify.sanitize(rawHTML);
-  const initialHtmlClass = darkmode ? 'dark' : '';
-  const bodyClass = `flex items-center flex-1 w-full overflow-x-hidden min-h-full bg-white dark:bg-black`;
-  const isFullPage = fullPage
-    ? `w-full`
-    : `mx-auto p-4 overflow-x-auto flex items-center`;
-  const pattern = showPattern ? `pattern` : '';
+  const bodyClass = `flex items-center flex-1 w-full overflow-x-hidden min-h-full bg-neutral-900`;
+  const isFullPage = fullPage ? `w-full` : `mx-auto p-4 overflow-x-auto flex items-center md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl h-full min-h-full`;
 
   return `
 <!DOCTYPE html>
-<html class="h-full ${initialHtmlClass} transition-all">
+<html class="h-full transition-all">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,11 +29,6 @@ export function componentPreviewHtml(
             background-size: 12px 12px;
         }
 
-        a, button {
-            pointer-events: none;
-            cursor: pointer;
-        }
-
         .pattern {
           background-image: radial-gradient(var(--line-color) 1px, transparent 1px), radial-gradient(var(--line-color) 1px, transparent 1px);
           background-size: calc(20 * 1px) calc(20 * 1px);
@@ -59,7 +45,7 @@ export function componentPreviewHtml(
       }
     </script>
 </head>
-<body class="${bodyClass} ${pattern}" style="height: min-content;" onload="removeLinks()">
+<body class="${bodyClass}" style="height: min-content;" onload="removeLinks()">
     <div class="${isFullPage}">
         ${componentHtml}
     </div>

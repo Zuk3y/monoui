@@ -1,0 +1,753 @@
+<!doctype html>
+<html class="${initialHtmlClass} h-full transition-all">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Preview</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        :root {
+            --line-color: #e5e5e5;
+        }
+
+        html.dark {
+            --line-color: #333333;
+        }
+
+        .lines {
+            background-image: repeating-linear-gradient(45deg,
+                    var(--line-color) 0,
+                    var(--line-color) 1px,
+                    transparent 0,
+                    transparent 50%);
+            background-size: 12px 12px;
+        }
+
+        .pattern {
+            background-image:
+                radial-gradient(var(--line-color) 1px, transparent 1px),
+                radial-gradient(var(--line-color) 1px, transparent 1px);
+            background-size: calc(20 * 1px) calc(20 * 1px);
+            background-position:
+                0 0,
+                calc(10 * 1px) calc(10 * 1px);
+        }
+    </style>
+
+    <script>
+        function removeLinks() {
+            document
+                .querySelectorAll('a')
+                .forEach((link) => link.removeAttribute('href'));
+            // document.addEventListener('click', (e) => e.preventDefault())
+            // document.addEventListener('keydown', (e) => e.preventDefault())
+        }
+    </script>
+</head>
+
+<body class="bg-neutral-900 p-16 space-y-8">
+
+    <!-- Style Guide -->
+    <div>
+        <h1 class="text-4xl font-bold text-neutral-100">Mono UI</h1>
+        <p class="text-sm text-neutral-400">A simple, dark mode component library for building web apps.</p>
+    </div>
+
+    <div class="space-y-6">
+        <h2 class="text-3xl font-bold text-neutral-100">Style Guide</h2>
+        <h3 class="text-xl font-bold text-neutral-100">Colors</h3>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="text-neutral-100 p-4 rounded-lg bg-neutral-900 border border-neutral-700">bg-neutral-900
+            </div>
+            <div class="text-neutral-100 p-4 rounded-lg bg-neutral-800 border border-neutral-700">bg-neutral-800
+            </div>
+            <div class="text-neutral-100 p-4 rounded-lg bg-neutral-700 border border-neutral-700">bg-neutral-700
+            </div>
+            <div class="text-neutral-100 p-4 rounded-lg bg-neutral-600 border border-neutral-700">bg-neutral-600
+            </div>
+            <div class="text-neutral-100 p-4 rounded-lg bg-neutral-500 border border-neutral-700">bg-neutral-500
+            </div>
+            <div class="text-neutral-100 p-4 rounded-lg bg-neutral-400 border border-neutral-700">bg-neutral-400
+            </div>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-100 pt-4">Typography</h3>
+        <div class="space-y-2">
+            <p class="text-xs text-neutral-400">This is an example of text-xs</p>
+            <p class="text-sm text-neutral-400">This is an example of text-sm</p>
+            <p class="text-base text-neutral-400">This is an example of text-base</p>
+            <p class="text-lg text-neutral-400">This is an example of text-lg</p>
+            <p class="text-xl text-neutral-400">This is an example of text-xl</p>
+            <p class="text-2xl text-neutral-400">This is an example of text-2xl</p>
+            <p class="text-3xl text-neutral-400">This is an example of text-3xl</p>
+            <p class="text-4xl text-neutral-400">This is an example of text-4xl</p>
+        </div>
+
+        <div class="space-y-2 pt-4">
+            <p class="text-base text-neutral-100">This is normal text<code
+                    class="text-green-300"> text-neutral-100</code></p>
+            <p class="text-sm text-neutral-400">This is subtext<code class="text-green-300"> text-neutral-400</code></p>
+            <p class="text-sm text-neutral-500">This is muted text<code class="text-green-300"> text-neutral-500</code>
+            </p>
+            <p class="text-sm text-neutral-300 font-semibold">This is highlighted text<code
+                    class="text-green-300"> text-neutral-300 font-semibold</code></p>
+        </div>
+
+        <h3 class="text-xl font-bold text-neutral-100 pt-4">Borders & Radius</h3>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="text-neutral-100 p-4 rounded-none bg-neutral-800 border border-neutral-700">
+                rounded-none
+            </div>
+            <div class="text-neutral-100 p-4 rounded-sm bg-neutral-800 border border-neutral-700">
+                rounded-sm
+            </div>
+            <div class="text-neutral-100 p-4 rounded-md bg-neutral-800 border border-neutral-700">
+                rounded-md
+            </div>
+            <div class="text-neutral-100 p-4 rounded-lg bg-neutral-800 border border-neutral-700">
+                rounded-lg
+            </div>
+            <div class="text-neutral-100 p-4 rounded-xl bg-neutral-800 border border-neutral-700">
+                rounded-xl
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <h3 class="text-xl font-bold text-neutral-100 pt-4">Components</h3>
+        <!-- Buttons -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Buttons</h2>
+            <div class="flex items-center justify-between">
+                <button
+                    class="rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                    Action
+                </button>
+
+                <button
+                    class="rounded-lg border border-neutral-700 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:text-neutral-100">
+                    Action
+                </button>
+
+                <div class="inline-flex overflow-hidden rounded-lg border border-neutral-700 hover:border-neutral-600">
+                    <button
+                        class="bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:bg-neutral-700 hover:text-neutral-100">
+                        Left
+                    </button>
+                    <button
+                        class="border-l border-neutral-800 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:bg-neutral-700 hover:text-neutral-100">
+                        Middle
+                    </button>
+                    <button
+                        class="border-l border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:bg-neutral-700 hover:text-neutral-100">
+                        Right
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alerts -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Alerts</h2>
+            <div class="space-y-8">
+
+                <!-- Basic Alert -->
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <span class="mb-2 text-sm font-semibold text-neutral-100">Alert</span>
+                    <p class="text-sm text-neutral-400">
+                        This is a simple basic alert!
+                    </p>
+                </div>
+
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex items-center justify-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-info-icon lucide-info text-neutral-100">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4" />
+                            <path d="M12 8h.01" />
+                        </svg>
+
+                        <div class="flex-1">
+                            <span class="mb-2 text-sm font-semibold text-neutral-100">Alert</span>
+                            <p class="text-sm text-neutral-400">
+                                This is a simple basic alert!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex items-center justify-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-info-icon lucide-info text-neutral-100">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4" />
+                            <path d="M12 8h.01" />
+                        </svg>
+
+                        <div class="flex-1">
+                            <span class="mb-2 text-sm font-semibold text-neutral-100">Alert</span>
+                            <p class="text-sm text-neutral-400">
+                                This is a simple basic alert!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-end gap-2">
+                        <button
+                            class="mt-4 rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                            Button
+                        </button>
+                        <button
+                            class="mt-4 rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                            Button
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Accent Border Alert -->
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800 border-s-8 border-l-neutral-400">
+                    <span class="mb-2 text-sm font-semibold text-neutral-100">Alert</span>
+                    <p class="text-sm text-neutral-400">
+                        This is a simple basic alert!
+                    </p>
+                </div>
+
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800 border-s-8 border-l-neutral-400">
+                    <div class="flex items-center justify-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-info-icon lucide-info text-neutral-100">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4" />
+                            <path d="M12 8h.01" />
+                        </svg>
+
+                        <div class="flex-1">
+                            <span class="mb-2 text-sm font-semibold text-neutral-100">Alert</span>
+                            <p class="text-sm text-neutral-400">
+                                This is a simple basic alert!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800 border-s-8 border-l-neutral-400">
+                    <div class="flex items-center justify-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-info-icon lucide-info text-neutral-100">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4" />
+                            <path d="M12 8h.01" />
+                        </svg>
+
+                        <div class="flex-1">
+                            <span class="mb-2 text-sm font-semibold text-neutral-100">Alert</span>
+                            <p class="text-sm text-neutral-400">
+                                This is a simple basic alert!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-end gap-2">
+                        <button
+                            class="mt-4 rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                            Button
+                        </button>
+                        <button
+                            class="mt-4 rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                            Button
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Badges -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Badges</h2>
+            <div class="space-y-8">
+
+                <div class="space-x-2 flex items-center justify-between">
+                    <span
+                        class="inline-block rounded-full bg-neutral-700 px-3 py-1 text-xs text-neutral-300">Badge</span>
+                    <span class="inline-block rounded-full bg-green-950 px-3 py-1 text-xs text-green-300">Success</span>
+                    <span class="inline-block rounded-full bg-blue-950 px-3 py-1 text-xs text-blue-300">Info</span>
+                    <span
+                        class="inline-block rounded-full bg-yellow-950 px-3 py-1 text-xs text-yellow-300">Warning</span>
+                    <span class="inline-block rounded-full bg-red-950 px-3 py-1 text-xs text-red-300">Error</span>
+                </div>
+
+                <div class="space-x-2 flex items-center justify-between">
+                    <span class="inline-block rounded-md bg-neutral-700 px-2 py-1 text-xs text-neutral-300">Badge</span>
+                    <span class="inline-block rounded-md bg-green-950 px-2 py-1 text-xs text-green-300">Success</span>
+                    <span class="inline-block rounded-md bg-blue-950 px-2 py-1 text-xs text-blue-300">Info</span>
+                    <span class="inline-block rounded-md bg-yellow-950 px-2 py-1 text-xs text-yellow-300">Warning</span>
+                    <span class="inline-block rounded-md bg-red-950 px-2 py-1 text-xs text-red-300">Error</span>
+                </div>
+
+                <div class="space-x-2 flex items-center justify-between">
+                    <span
+                        class="flex items-center justify-center gap-1 rounded-full bg-neutral-700 pl-1 pr-2 py-1 text-xs text-neutral-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-check-icon lucide-circle-check text-neutral-500">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="m9 12 2 2 4-4" />
+                        </svg>
+                        Badge
+                    </span>
+                </div>
+
+                <div class="space-x-2 flex items-center justify-between">
+                    <span
+                        class="flex items-center justify-center gap-1 rounded-full bg-neutral-700 pl-2 pr-1 py-1 text-xs text-neutral-300">
+                        Badge
+                        <button class="cursor-pointer transition-colors text-neutral-500 hover:text-neutral-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-circle-x-icon lucide-circle-x">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m15 9-6 6" />
+                                <path d="m9 9 6 6" />
+                            </svg>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breadcrumbs -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Breadcrumbs</h2>
+            <p class="text-neutral-100">Done</p>
+        </div>
+
+        <!-- Cards -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Cards</h2>
+
+            <div class="space-y-8">
+
+                <h4 class="text-neutral-500 text-lg font-bold">Basic card</h4>
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex flex-col gap-y-6">
+                        <span class="text-sm font-semibold text-neutral-100">Card</span>
+                        <p class="text-sm text-neutral-400">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="text-neutral-500 text-lg font-bold">Card with button</h4>
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex flex-col gap-y-6">
+                        <span class="text-sm font-semibold text-neutral-100">Card</span>
+                        <p class="text-sm text-neutral-400">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        </p>
+                        <div class="flex items-center justify-end">
+                            <button
+                                class="rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                                Action
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-neutral-500 text-lg font-bold">Card with badge</h4>
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex flex-col gap-y-6">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-semibold text-neutral-100">Card</span>
+                            <span
+                                class="inline-block gap-1 rounded-full bg-neutral-700 px-3 py-1 text-xs text-neutral-300">Badge</span>
+                        </div>
+                        <p class="text-sm text-neutral-400">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="text-neutral-500 text-lg font-bold">Card with footer</h4>
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex flex-col gap-y-6">
+                        <span class="text-sm font-semibold text-neutral-100">Card</span>
+                        <p class="text-sm text-neutral-400">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        </p>
+                        <footer class="border-t pt-2 text-xs border-neutral-700 text-neutral-500">
+                            Last updated 3 days ago
+                        </footer>
+                    </div>
+                </div>
+
+                <h4 class="text-neutral-500 text-lg font-bold">Card with stats</h4>
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex flex-col gap-y-2">
+                        <span class="text-sm font-semibold text-neutral-400">Revenue</span>
+                        <span class="text-xl font-semibold text-neutral-100">$24,300.50</span>
+                        <div class="flex items-center justify-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-chevron-up-icon lucide-chevron-up text-green-300">
+                                <path d="m18 15-6-6-6 6" />
+                            </svg>
+                            <span class="text-sm font-semibold text-green-300">12% since last week</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-neutral-500 text-lg font-bold">Card with image</h4>
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex flex-col gap-y-6">
+                        <img src="https://images.unsplash.com/photo-1747901718105-bf9beb57ba3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Cute kitten" class="h-48 w-full rounded-lg object-cover" />
+                        <span class="text-sm font-semibold text-neutral-100">Card</span>
+                        <p class="text-sm text-neutral-400">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="text-neutral-500 text-lg font-bold">Card with image top full and hover</h4>
+                <div>
+                    <div class="overflow-hidden rounded-t-lg border-t border-x border-neutral-700">
+                        <img src="https://images.unsplash.com/photo-1747901718105-bf9beb57ba3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Cute kitten"
+                            class="h-48 w-full rounded-t-lg object-cover hover:scale-105 transition-transform duration-200" />
+                    </div>
+                    <div class="rounded-b-lg border-b border-x p-6 border-neutral-700 bg-neutral-800">
+                        <div class="flex flex-col gap-y-6">
+                            <span class="text-sm font-semibold text-neutral-100">Card</span>
+                            <p class="text-sm text-neutral-400">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Cookies -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Cookies</h2>
+            <div class="space-y-8">
+
+                <h4 class="text-neutral-500 text-lg font-bold">Cookies with emoji</h4>
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex flex-col gap-y-4">
+                        <span class="text-sm font-semibold text-neutral-100">🍪 Cookies</span>
+                        <p class="text-sm text-neutral-400">
+                            We use cookies to ensure you get the best experience on our website. By continuing, you
+                            agree to our
+                            <a href="#">
+                                <span class="text-blue-400 hover:underline cursor-pointer">Privacy Policy</span>
+                            </a>.
+                        </p>
+                        <div class="flex items-center justify-end gap-2">
+                            <button
+                                class="rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                                Settings
+                            </button>
+                            <button
+                                class="rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                                Accept
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="text-neutral-500 text-lg font-bold">Cookies with icon</h4>
+                <div class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex flex-col gap-y-4">
+                        <div class="flex items-center justify-start gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-cookie-icon lucide-cookie text-neutral-100">
+                                <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5" />
+                                <path d="M8.5 8.5v.01" />
+                                <path d="M16 15.5v.01" />
+                                <path d="M12 12v.01" />
+                                <path d="M11 17v.01" />
+                                <path d="M7 14v.01" />
+                            </svg>
+                            <span class="text-sm font-semibold text-neutral-100">Cookies</span>
+                        </div>
+
+                        <p class="text-sm text-neutral-400">
+                            We use cookies to ensure you get the best experience on our website. By continuing, you
+                            agree to our
+                            <a href="#">
+                                <span class="text-blue-400 hover:underline cursor-pointer">Privacy Policy</span>
+                            </a>.
+                        </p>
+                        <div class="flex items-center justify-end gap-2">
+                            <button
+                                class="rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                                Settings
+                            </button>
+                            <button
+                                class="rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                                Accept
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Images -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Images</h2>
+            <div class="space-y-8">
+
+                <h4 class="text-neutral-500 text-lg font-bold">Basic</h4>
+                <img class="w-full rounded-lg shadow-md"
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500"
+                    alt="Descriptive Alt Text" />
+
+                <h4 class="text-neutral-500 text-lg font-bold">Image with hover</h4>
+                <div class="overflow-hidden rounded-lg border border-neutral-700">
+                    <img class="w-full rounded-lg shadow-md hover:scale-110 transition-transform duration-400"
+                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500"
+                        alt="Descriptive Alt Text" />
+                </div>
+
+                <h4 class="text-neutral-500 text-lg font-bold">Image with Text on hover</h4>
+                <div class="group relative overflow-hidden rounded-lg border border-neutral-700">
+                    <img class="w-full rounded-lg shadow-md group-hover:scale-110 transition-transform duration-400"
+                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500"
+                        alt="Descriptive Alt Text" />
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-center bg-neutral-950/90 p-8 text-center opacity-0 transition-opacity duration-400 group-hover:opacity-100">
+                        <h3 class="mb-2 text-xl font-semibold text-neutral-100">Title</h3>
+                        <p class="text-sm text-neutral-400">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        </p>
+                    </div>
+                </div>
+
+                <h4 class="text-neutral-500 text-lg font-bold">Image with complex hover</h4>
+                <div class="group relative overflow-hidden rounded-lg border border-neutral-700">
+                    <img class="w-full rounded-lg shadow-md group-hover:scale-110 transition-transform duration-400"
+                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500"
+                        alt="Descriptive Alt Text" />
+                    <div
+                        class="absolute inset-0 flex flex-col bg-neutral-950/90 p-8 opacity-0 transition-opacity duration-400 group-hover:opacity-100">
+                        <div class="flex-1">
+                            <h3 class="mb-2 text-xl font-semibold text-neutral-100">Title</h3>
+                            <p class="text-sm text-neutral-400">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            </p>
+                        </div>
+                        <div class="flex justify-end">
+                            <button
+                                class="rounded-lg border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                                Action
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Paginations -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Pagination</h2>
+            <div class="space-y-8">
+
+                <h4 class="text-neutral-500 text-lg font-bold">Basic</h4>
+                <div class="flex items-center justify-center gap-2">
+                    <button
+                        class="flex items-center justify-center rounded-lg border border-neutral-700 bg-neutral-800 h-8 w-8 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-left-icon lucide-chevron-left">
+                            <path d="m15 18-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button
+                        class="rounded-lg border border-neutral-700 bg-neutral-800 h-8 w-8 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                        1
+                    </button>
+                    <button
+                        class="rounded-lg border border-neutral-700 bg-neutral-800 h-8 w-8 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                        2
+                    </button>
+                    <button
+                        class="rounded-lg border border-neutral-700 bg-neutral-800 h-8 w-8 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                        3
+                    </button>
+                    <button
+                        class="flex items-center justify-center rounded-lg border border-neutral-700 bg-neutral-800 h-8 w-8 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tables -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Tables</h2>
+            <div class="space-y-8">
+
+                <h4 class="text-neutral-500 text-lg font-bold">Basic</h4>
+
+                <table class="min-w-full border-separate border-spacing-0">
+                    <thead>
+                        <tr class="text-neutral-400">
+                            <th class="px-4 py-2 text-left text-xs font-semibold uppercase border-b border-neutral-800">
+                                Project</th>
+                            <th class="px-4 py-2 text-left text-xs font-semibold uppercase border-b border-neutral-800">
+                                Status</th>
+                            <th class="px-4 py-2 text-left text-xs font-semibold uppercase border-b border-neutral-800">
+                                Progress</th>
+                            <th class="px-4 py-2 text-left text-xs font-semibold uppercase border-b border-neutral-800">
+                                Due Date
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-neutral-800 transition-colors cursor-pointer">
+                            <td class="px-4 py-2 text-xs text-neutral-100 border-b border-neutral-800">Mobile App</td>
+                            <td class="px-4 py-2 text-xs text-neutral-400 border-b border-neutral-800">
+                                <span
+                                    class="inline-block rounded-md bg-green-950 px-2 py-1 text-xs text-green-300">Active</span>
+                            </td>
+                            <td class="px-4 py-2 text-xs text-neutral-400 border-b border-neutral-800">75%</td>
+                            <td class="px-4 py-2 text-xs text-neutral-400 border-b border-neutral-800">2023-12-31</td>
+                        </tr>
+                        <tr class="hover:bg-neutral-800 transition-colors cursor-pointer">
+                            <td class="px-4 py-2 text-xs text-neutral-100 border-b border-neutral-800">API Integratione
+                            </td>
+                            <td class="px-4 py-2 text-xs text-neutral-400 border-b border-neutral-800">
+                                <span
+                                    class="inline-block rounded-md bg-yellow-950 px-2 py-1 text-xs text-yellow-300">Pending</span>
+                            </td>
+                            <td class="px-4 py-2 text-xs text-neutral-400 border-b border-neutral-800">20%</td>
+                            <td class="px-4 py-2 text-xs text-neutral-400 border-b border-neutral-800">2023-12-30</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <!-- Forms -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Forms</h2>
+            <div class="space-y-8">
+
+                <h4 class="text-neutral-500 text-lg font-bold">Sample form</h4>
+                <form action="#" class="rounded-lg border p-6 border-neutral-700 bg-neutral-800">
+                    <div class="flex flex-col gap-y-4">
+                        <span class="text-sm font-semibold text-neutral-100">Sample Form</span>
+                        <p class="text-sm text-neutral-400">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        </p>
+                        <div>
+                            <label for="username" class="text-xs text-neutral-500">
+                                Username:
+                            </label>
+                            <input type="text" name="username" placeholder=""
+                                class="w-full rounded-md border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-100 placeholder:text-neutral-500 focus:border-neutral-600 focus:outline-none focus:bg-neutral-700 transition-colors" />
+                        </div>
+                        <div>
+                            <label for="email" class="text-xs text-neutral-500">
+                                Email:
+                            </label>
+                            <input type="email" name="email" placeholder="your@email.com"
+                                class="w-full rounded-md border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-100 placeholder:text-neutral-500 focus:border-neutral-600 focus:outline-none focus:bg-neutral-700 transition-colors" />
+                        </div>
+                        <div>
+                            <label for="password" class="text-xs text-neutral-500">
+                                Password:
+                            </label>
+                            <input type="password" name="password" placeholder=""
+                                class="w-full rounded-md border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-100 placeholder:text-neutral-500 focus:border-neutral-600 focus:outline-none focus:bg-neutral-700 transition-colors" />
+                        </div>
+
+                        <div class="border-t border-neutral-700 pt-4 items-center justify-end flex gap-2">
+                            <button
+                                class="rounded-md border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-400 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                                Register
+                            </button>
+                            <button
+                                class="rounded-md border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-400 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100">
+                                Login
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Inputs -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Inputs</h2>
+            <div class="space-y-8">
+
+                <h4 class="text-neutral-500 text-lg font-bold">Basic</h4>
+                <div>
+                    <label for="label" class="text-xs text-neutral-500">
+                        Label:
+                    </label>
+                    <input type="text" name="label" placeholder="Input"
+                        class="w-full rounded-md border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-100 placeholder:text-neutral-500 focus:border-neutral-600 focus:outline-none focus:bg-neutral-700 transition-colors" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Skeleton -->
+        <div class="rounded-lg border border-neutral-700 p-8">
+            <h2 class="text-neutral-100 text-lg font-bold pb-8">Skeleton</h2>
+            <div class="space-y-8">
+
+                <h4 class="text-neutral-500 text-lg font-bold">Basic</h4>
+                <div class="mx-auto w-full max-w-md animate-pulse space-y-4 p-4">
+                    <div class="h-[200px] w-full rounded-lg bg-neutral-700"></div>
+                    <div class="h-10 w-10 rounded-full bg-neutral-700"></div>
+                    <div class="h-6 w-3/4 rounded-lg bg-neutral-700"></div>
+                    <div class="h-10 w-full rounded-lg bg-neutral-700"></div>
+                    <div class="h-10 w-1/2 rounded-lg bg-neutral-700"></div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>

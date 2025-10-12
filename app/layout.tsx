@@ -13,8 +13,7 @@ const nunitoText = Nunito({
 
 export const generateMetadata = (): Metadata => {
   const title = 'MonoUI - Beautiful Tailwind CSS v4 Components';
-  const description =
-    'MonoUI is a fast, modern component library for Tailwind CSS v4. Build stunning, responsive interfaces in minutes with plug-and-play React components.';
+  const description = 'MonoUI is a fast, modern component library for Tailwind CSS v4. Build stunning, responsive interfaces in minutes with plug-and-play React components.';
 
   return {
     title,
@@ -33,25 +32,14 @@ export const generateMetadata = (): Metadata => {
         },
       ],
     },
-    keywords: [
-      'Tailwind CSS components',
-      'Tailwind UI kit',
-      'React UI components',
-      'MonoUI',
-      'responsive web components',
-      'free Tailwind templates',
-      'developer tools',
-      'open-source UI library',
-    ],
+    keywords: ['Tailwind CSS components', 'Tailwind UI kit', 'React UI components', 'MonoUI', 'responsive web components', 'free Tailwind templates', 'developer tools', 'open-source UI library'],
   };
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${nunitoText} antialiased`}>
+      <body className={`${nunitoText} bg-neutral-900 antialiased`}>
         <div className="">
           <div className="z-100">{children}</div>
         </div>

@@ -1,86 +1,28 @@
-<div class="w-full overflow-x-auto rounded-lg">
-  <table class="min-w-full">
-    <thead class="bg-neutral-100 dark:bg-neutral-900">
-      <tr>
-        <th class="p-4 text-left text-sm font-bold text-black dark:text-white">
-          Name
-        </th>
-        <th class="p-4 text-left text-sm font-bold text-black dark:text-white">
-          Email
-        </th>
-        <th class="p-4 text-left text-sm font-bold text-black dark:text-white">
-          Role
-        </th>
-        <th class="p-4 text-left text-sm font-bold text-black dark:text-white">
-          Actions
-        </th>
-      </tr>
-    </thead>
-    <tbody class="divide-y divide-neutral-300 dark:divide-neutral-700">
-      <tr>
-        <td class="p-4 text-black dark:text-white">Jane Doe</td>
-        <td class="p-4 text-black/50 dark:text-white/50">jane@example.com</td>
-        <td class="p-4 text-black/50 dark:text-white/50">
-          <span
-            class="rounded-lg border border-neutral-300 bg-neutral-100 px-2 py-1 text-sm whitespace-nowrap text-black dark:border-neutral-700 dark:bg-neutral-900 dark:text-white"
-          >
-            Admin
-          </span>
-        </td>
-        <td class="p-4">
-          <div
-            class="flex w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-700"
-          >
-            <button
-              class="flex-1 bg-neutral-100 px-4 py-2 text-sm text-black transition-colors hover:bg-neutral-200 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800"
-            >
-              Edit
-            </button>
-            <button
-              class="flex-1 bg-neutral-100 px-4 py-2 text-sm text-black transition-colors hover:bg-neutral-200 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800"
-            >
-              View
-            </button>
-            <button
-              class="flex-1 bg-neutral-100 px-4 py-2 text-sm text-black transition-colors hover:bg-neutral-200 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800"
-            >
-              Delete
-            </button>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="p-4 text-black dark:text-white">John Smith</td>
-        <td class="p-4 text-black/50 dark:text-white/50">john@example.com</td>
-        <td class="p-4 text-black/50 dark:text-white/50">
-          <span
-            class="rounded-lg border border-neutral-300 bg-neutral-100 px-2 py-1 text-sm whitespace-nowrap text-black dark:border-neutral-700 dark:bg-neutral-900 dark:text-white"
-          >
-            User
-          </span>
-        </td>
-        <td class="p-4">
-          <div
-            class="flex w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-700"
-          >
-            <button
-              class="flex-1 bg-neutral-100 px-4 py-2 text-sm text-black transition-colors hover:bg-neutral-200 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800"
-            >
-              Edit
-            </button>
-            <button
-              class="flex-1 bg-neutral-100 px-4 py-2 text-sm text-black transition-colors hover:bg-neutral-200 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800"
-            >
-              View
-            </button>
-            <button
-              class="flex-1 bg-neutral-100 px-4 py-2 text-sm text-black transition-colors hover:bg-neutral-200 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800"
-            >
-              Delete
-            </button>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<table class="max-w-lg min-w-full border-separate border-spacing-0">
+  <thead>
+    <tr class="text-neutral-400">
+      <th class="border-b border-neutral-800 px-4 py-2 text-left text-xs font-semibold uppercase">Project</th>
+      <th class="border-b border-neutral-800 px-4 py-2 text-left text-xs font-semibold uppercase">Status</th>
+      <th class="border-b border-neutral-800 px-4 py-2 text-left text-xs font-semibold uppercase">Progress</th>
+      <th class="border-b border-neutral-800 px-4 py-2 text-left text-xs font-semibold uppercase">Due Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="cursor-pointer transition-colors hover:bg-neutral-800">
+      <td class="border-b border-neutral-800 px-4 py-2 text-xs text-neutral-100">Mobile App</td>
+      <td class="border-b border-neutral-800 px-4 py-2 text-xs text-neutral-400">
+        <span class="inline-block rounded-md bg-green-950 px-2 py-1 text-xs text-green-300">Active</span>
+      </td>
+      <td class="border-b border-neutral-800 px-4 py-2 text-xs text-neutral-400">75%</td>
+      <td class="border-b border-neutral-800 px-4 py-2 text-xs text-neutral-400">2023-12-31</td>
+    </tr>
+    <tr class="cursor-pointer transition-colors hover:bg-neutral-800">
+      <td class="border-b border-neutral-800 px-4 py-2 text-xs text-neutral-100">API Integratione</td>
+      <td class="border-b border-neutral-800 px-4 py-2 text-xs text-neutral-400">
+        <span class="inline-block rounded-md bg-yellow-950 px-2 py-1 text-xs text-yellow-300">Pending</span>
+      </td>
+      <td class="border-b border-neutral-800 px-4 py-2 text-xs text-neutral-400">20%</td>
+      <td class="border-b border-neutral-800 px-4 py-2 text-xs text-neutral-400">2023-12-30</td>
+    </tr>
+  </tbody>
+</table>

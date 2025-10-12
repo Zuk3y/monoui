@@ -25,30 +25,19 @@ interface ComponentData {
   requiresJS: boolean;
 }
 
-export default function ComponentPreview({
-  compData,
-}: {
-  compData: ComponentData;
-}) {
+export default function ComponentPreview({ compData }: { compData: ComponentData }) {
   const [size, setSize] = useState<keyof typeof SIZES>('full');
   const [showCode, setShowCode] = useState(false);
-  const [isDark, setIsDark] = useState(false);
-  const [isPattern, setIsPattern] = useState(false);
   const [componentJsx, setComponentJsx] = useState<string | null>(null);
 
-  const iframeHtml = useMemo(
-    () =>
-      componentPreviewHtml(compData.raw, isDark, isPattern, compData.fullPage),
-    [compData.raw, isDark, isPattern, compData.fullPage]
-  );
+  const iframeHtml = useMemo(() => componentPreviewHtml(compData.raw, compData.fullPage), [compData.raw, compData.fullPage]);
 
   const fetchComponentJsx = useCallback(async () => {
     if (componentJsx) return;
 
     try {
       const res = await fetch(compData.path);
-      if (!res.ok)
-        throw new Error(`Failed to fetch component JSX: ${res.statusText}`);
+      if (!res.ok) throw new Error(`Failed to fetch component JSX: ${res.statusText}`);
 
       const html = await res.text();
       setComponentJsx(rawToJsx(html));
@@ -64,26 +53,11 @@ export default function ComponentPreview({
   }, [showCode, componentJsx, fetchComponentJsx]);
 
   return (
-    <div className="rounded-lg bg-white transition">
+    <div className="rounded-lg border border-neutral-700 bg-neutral-800 p-4 shadow-sm transition">
       <PreviewHeader compData={compData} />
-      <PreviewToolbar
-        size={size}
-        onSizeChange={setSize}
-        isDark={isDark}
-        toggleDark={() => setIsDark((d) => !d)}
-        showCode={showCode}
-        toggleCode={() => setShowCode((c) => !c)}
-        isPattern={isPattern}
-        togglePattern={() => setIsPattern((x) => !x)}
-      />
+      <PreviewToolbar size={size} onSizeChange={setSize} showCode={showCode} toggleCode={() => setShowCode(c => !c)} />
       {showCode && componentJsx && <CopyCodeButton code={componentJsx} />}
-      <PreviewContent
-        compData={compData}
-        size={size}
-        iframeHtml={iframeHtml}
-        showCode={showCode}
-        componentJsx={componentJsx}
-      />
+      <PreviewContent compData={compData} size={size} iframeHtml={iframeHtml} showCode={showCode} componentJsx={componentJsx} />
     </div>
   );
 }

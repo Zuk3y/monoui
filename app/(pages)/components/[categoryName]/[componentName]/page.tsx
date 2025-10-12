@@ -28,15 +28,11 @@ type ComponentObject = {
   items: ComponentItem[];
 };
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ categoryName: string; componentName: string }>;
-}) {
+export async function generateMetadata({ params }: { params: Promise<{ categoryName: string; componentName: string }> }) {
   const { categoryName, componentName } = await params;
 
-  const category = components.find((c) => c.category_slug === categoryName);
-  const component = category?.items.find((item) => {
+  const category = components.find(c => c.category_slug === categoryName);
+  const component = category?.items.find(item => {
     const parts = item.link.split('/');
     return parts[parts.length - 1] === componentName;
   });
@@ -58,18 +54,12 @@ export async function generateMetadata({
   };
 }
 
-export default async function ComponentSlugPage({
-  params,
-}: {
-  params: Promise<{ categoryName: string; componentName: string }>;
-}) {
+export default async function ComponentSlugPage({ params }: { params: Promise<{ categoryName: string; componentName: string }> }) {
   const { categoryName, componentName } = await params;
 
-  const category = components.find((c) => c.category_slug === categoryName) as
-    | ComponentObject
-    | undefined;
+  const category = components.find(c => c.category_slug === categoryName) as ComponentObject | undefined;
 
-  const component = category?.items.find((item) => {
+  const component = category?.items.find(item => {
     const parts = item.link.split('/');
     return parts[parts.length - 1] === componentName;
   }) as ComponentItem | undefined;
@@ -113,15 +103,10 @@ export default async function ComponentSlugPage({
   return (
     <>
       <header className="flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-between sm:space-y-0 md:space-y-0">
-        <h1 className="text-3xl font-extrabold">{component?.name}</h1>
-        <span className="self-start rounded-lg bg-blue-100 px-2.5 py-0.5 text-sm font-bold text-blue-500 sm:self-auto">
-          Tailwind CSS v4
-        </span>
+        <h1 className="text-3xl font-extrabold text-neutral-100">{component?.name}</h1>
       </header>
       <section className="my-4">
-        <p className="text-md max-w-2xl font-bold text-gray-600">
-          {component?.description}
-        </p>
+        <p className="text-md max-w-2xl font-bold text-neutral-400">{component?.description}</p>
       </section>
       <div className="space-y-8">
         <PreviewWrapper demos={demos} />

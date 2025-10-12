@@ -3,7 +3,12 @@
   "tailwindConfig": "./tailwind.config.js",
   "semi": true,
   "singleQuote": true,
-  "printWidth": 80,
+  "printWidth": 200,
   "tabWidth": 2,
-  "trailingComma": "es5"
+  "trailingComma": "es5",
+  "jsxSingleQuote": false,
+  "endOfLine": "lf",
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "useTabs": false
 }

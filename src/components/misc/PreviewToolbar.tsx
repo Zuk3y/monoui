@@ -1,16 +1,6 @@
 'use client';
 
-import {
-  Smartphone,
-  Tablet,
-  Monitor,
-  MonitorSmartphone,
-  Code2,
-  Eye,
-  Sun,
-  Moon,
-  Grip,
-} from 'lucide-react';
+import { Smartphone, Tablet, Monitor, MonitorSmartphone, Code2, Eye } from 'lucide-react';
 import clsx from 'clsx';
 
 const SIZES = {
@@ -27,32 +17,17 @@ const SIZE_ICONS = {
   full: <MonitorSmartphone size={16} />,
 };
 
-const BASE_BUTTON_CLASSES =
-  'flex items-center gap-1 px-3 py-1.5 rounded-lg border transition text-xs';
-const TOGGLE_BUTTON_CLASSES =
-  'border-black/20 text-black hover:bg-black hover:text-white';
+const BASE_BUTTON_CLASSES = 'flex items-center gap-1 px-3 py-1.5 rounded-lg border border-neutral-700 transition text-xs';
+const TOGGLE_BUTTON_CLASSES = 'text-neutral-400 hover:bg-neutral-700 hover:text-white hover:border-neutral-600';
 
 interface PreviewToolbarProps {
   size: keyof typeof SIZES;
   onSizeChange: (size: keyof typeof SIZES) => void;
-  isDark: boolean;
-  toggleDark: () => void;
   showCode: boolean;
   toggleCode: () => void;
-  isPattern: boolean;
-  togglePattern: () => void;
 }
 
-export default function PreviewToolbar({
-  size,
-  onSizeChange,
-  isDark,
-  toggleDark,
-  showCode,
-  toggleCode,
-  isPattern,
-  togglePattern,
-}: PreviewToolbarProps) {
+export default function PreviewToolbar({ size, onSizeChange, showCode, toggleCode }: PreviewToolbarProps) {
   return (
     <div className="mb-4 flex flex-wrap items-center gap-2">
       <div className="hidden gap-2 lg:flex">
@@ -60,10 +35,7 @@ export default function PreviewToolbar({
           <button
             key={key}
             onClick={() => onSizeChange(key as keyof typeof SIZES)}
-            className={clsx(
-              BASE_BUTTON_CLASSES,
-              size === key ? 'bg-black text-white' : TOGGLE_BUTTON_CLASSES
-            )}
+            className={clsx(BASE_BUTTON_CLASSES, size === key ? 'bg-neutral-700 text-neutral-100' : TOGGLE_BUTTON_CLASSES)}
             title={`Preview in ${key}`}
           >
             {SIZE_ICONS[key as keyof typeof SIZES]}
@@ -71,29 +43,9 @@ export default function PreviewToolbar({
           </button>
         ))}
       </div>
-      <button
-        onClick={toggleDark}
-        className={clsx(BASE_BUTTON_CLASSES, TOGGLE_BUTTON_CLASSES)}
-        title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-      >
-        {isDark ? <Sun size={16} /> : <Moon size={16} />}
-        {isDark ? 'Light' : 'Dark'}
-      </button>
-      <button
-        onClick={toggleCode}
-        className={clsx(BASE_BUTTON_CLASSES, TOGGLE_BUTTON_CLASSES)}
-        title={showCode ? 'Show Component Preview' : 'Show Component Code'}
-      >
+      <button onClick={toggleCode} className={clsx(BASE_BUTTON_CLASSES, TOGGLE_BUTTON_CLASSES)} title={showCode ? 'Show Component Preview' : 'Show Component Code'}>
         {showCode ? <Eye size={16} /> : <Code2 size={16} />}
         {showCode ? 'Preview' : 'Code'}
-      </button>
-      <button
-        onClick={togglePattern}
-        className={clsx(BASE_BUTTON_CLASSES, TOGGLE_BUTTON_CLASSES)}
-        title={isPattern ? 'Show Pattern' : 'Hide Pattern'}
-      >
-        {isPattern ? <Grip size={16} /> : <Grip size={16} />}
-        {isPattern ? 'Hide' : 'Show'}
       </button>
     </div>
   );

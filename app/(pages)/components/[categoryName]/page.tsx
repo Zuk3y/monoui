@@ -1,13 +1,9 @@
 import { components } from '@utils/components-data';
 import CategoryPage from '@components/misc/CategoryPage';
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ categoryName: string }>;
-}) {
+export async function generateMetadata({ params }: { params: Promise<{ categoryName: string }> }) {
   const { categoryName } = await params;
-  const category = components.find((c) => c.category_slug === categoryName);
+  const category = components.find(c => c.category_slug === categoryName);
   if (!category) {
     return {
       title: 'Category Not Found',
@@ -20,11 +16,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function CategorySlugPage({
-  params,
-}: {
-  params: Promise<{ categoryName: string }>;
-}) {
+export default async function CategorySlugPage({ params }: { params: Promise<{ categoryName: string }> }) {
   const { categoryName } = await params;
   return (
     <>

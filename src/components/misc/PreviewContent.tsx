@@ -35,21 +35,10 @@ interface PreviewContentProps {
   componentJsx: string | null;
 }
 
-export default function PreviewContent({
-  compData,
-  size,
-  iframeHtml,
-  showCode,
-  componentJsx,
-}: PreviewContentProps) {
+export default function PreviewContent({ compData, size, iframeHtml, showCode, componentJsx }: PreviewContentProps) {
   if (!showCode) {
     return (
-      <div
-        className={clsx(
-          'mx-auto overflow-hidden rounded-xl border border-black/10 transition-all ease-in-out',
-          SIZES[size]
-        )}
-      >
+      <div className={clsx('mx-auto overflow-hidden rounded-xl border border-neutral-700 transition-all ease-in-out', SIZES[size])}>
         <iframe
           srcDoc={iframeHtml}
           className="h-full w-full transition-all"
@@ -58,7 +47,6 @@ export default function PreviewContent({
             maxWidth: SIZE_VALUES[size],
           }}
           title={`Preview of ${compData.name}`}
-          sandbox="allow-scripts"
         />
       </div>
     );

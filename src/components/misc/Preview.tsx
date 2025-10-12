@@ -19,7 +19,7 @@ interface PreviewProps {
 export default function Preview({ comps }: PreviewProps) {
   return (
     <div className="space-y-10">
-      {comps.map((compData) => (
+      {comps.map(compData => (
         <ComponentPreview key={compData.path} compData={compData} />
       ))}
     </div>

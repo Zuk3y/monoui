@@ -1,11 +1,7 @@
 import Sidebar from '@components/sidebar/Sidebar';
 import Navbar from '@components/navbar/Navbar';
 
-export default async function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex lg:h-screen">
       <Sidebar />

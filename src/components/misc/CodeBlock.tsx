@@ -17,7 +17,7 @@ export default function CodeBlock({ code, language = 'jsx' }: CodeBlockProps) {
     }
   }, [code]);
   return (
-    <pre className="overflow-auto rounded-xl bg-gray-900 p-4 text-sm text-white">
+    <pre className="overflow-auto rounded-xl bg-neutral-800 p-4 text-sm text-white">
       <code ref={ref} className={`language-${language}`}>
         {code}
       </code>

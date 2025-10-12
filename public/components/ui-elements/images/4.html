@@ -1,32 +1,20 @@
-<div
-  class="group relative w-full cursor-pointer overflow-hidden rounded-lg shadow-md"
->
+<div class="group relative overflow-hidden rounded-lg border border-neutral-700">
   <img
+    class="w-full rounded-lg shadow-md transition-transform duration-400 group-hover:scale-110"
     src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500"
-    alt="Awesome workspace setup"
-    class="w-full transition-transform duration-300 group-hover:scale-105"
+    alt="Descriptive Alt Text"
   />
-  <div
-    class="absolute inset-0 flex flex-col justify-between bg-black/60 p-5 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-  >
-    <div class="space-y-2">
-      <h3 class="text-xl leading-tight font-bold">Awesome Workspace</h3>
-
-      <span
-        class="inline-block rounded-lg border border-neutral-300 bg-neutral-100 px-2 py-1 text-sm whitespace-nowrap text-black dark:border-neutral-700 dark:bg-neutral-900 dark:text-white"
-      >
-        Design
-      </span>
-
-      <p class="text-sm">By <span class="font-semibold">Jane Doe</span></p>
+  <div class="absolute inset-0 flex flex-col bg-neutral-950/90 p-8 opacity-0 transition-opacity duration-400 group-hover:opacity-100">
+    <div class="flex-1">
+      <h3 class="mb-2 text-xl font-semibold text-neutral-100">Title</h3>
+      <p class="text-sm text-neutral-400">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
     </div>
-    <div class="flex justify-center">
-      <a
-        href="#"
-        class="rounded-lg border border-neutral-300 bg-neutral-100 px-4 py-1 text-black transition-colors hover:bg-neutral-200 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800"
+    <div class="flex justify-end">
+      <button
+        class="rounded-md border border-neutral-700 bg-neutral-800 px-2 py-1 text-xs text-neutral-300 transition-colors hover:cursor-pointer hover:border-neutral-600 hover:bg-neutral-700 hover:text-neutral-100"
       >
-        Learn More
-      </a>
+        Action
+      </button>
     </div>
   </div>
 </div>

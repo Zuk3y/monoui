@@ -41,89 +41,39 @@ export const components = [
       {
         name: 'Alerts',
         link: '/components/ui-elements/alerts',
-        description:
-          'Inform users about important actions, system messages, or feedback with styled alert components.',
+        description: 'Inform users about important actions, system messages, or feedback with styled alert components.',
         data: [
           {
-            name: 'Basic',
+            name: 'Alert',
             path: '/components/ui-elements/alerts/Basic.html',
             fullPage: false,
             height: 200,
             requiresJS: false,
           },
           {
-            name: 'Basic with Icon',
+            name: 'Alert with Icon',
             path: '/components/ui-elements/alerts/Basic with Icon.html',
             fullPage: false,
             height: 200,
             requiresJS: false,
           },
           {
-            name: 'Basic with Button',
+            name: 'Alert with Button',
             path: '/components/ui-elements/alerts/Basic with Button.html',
             fullPage: false,
             height: 200,
             requiresJS: false,
           },
           {
-            name: 'Basic with Icon and Button',
-            path: '/components/ui-elements/alerts/Basic with Icon and Button.html',
-            fullPage: false,
-            height: 200,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat',
-            path: '/components/ui-elements/alerts/Flat.html',
-            fullPage: false,
-            height: 200,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat with Icon',
-            path: '/components/ui-elements/alerts/Flat with Icon.html',
-            fullPage: false,
-            height: 200,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat with Button',
+            name: 'Alert with Button and Border',
             path: '/components/ui-elements/alerts/Flat with Button.html',
             fullPage: false,
             height: 200,
             requiresJS: false,
           },
           {
-            name: 'Flat with Icon and Button',
-            path: '/components/ui-elements/alerts/Flat with Icon and Button.html',
-            fullPage: false,
-            height: 200,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Border',
+            name: 'Alert with Border',
             path: '/components/ui-elements/alerts/Flat Border.html',
-            fullPage: false,
-            height: 200,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Border with Icon',
-            path: '/components/ui-elements/alerts/Flat Border with Icon.html',
-            fullPage: false,
-            height: 200,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Border with Button',
-            path: '/components/ui-elements/alerts/Flat Border with Button.html',
-            fullPage: false,
-            height: 200,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Border with Icon and Button',
-            path: '/components/ui-elements/alerts/Flat Border with Icon and Button.html',
             fullPage: false,
             height: 200,
             requiresJS: false,
@@ -136,16 +86,8 @@ export const components = [
       {
         name: 'Avatars',
         link: '/components/ui-elements/avatars',
-        description:
-          'Display user profile images or placeholders in a compact and customizable format.',
+        description: 'Display user profile images or placeholders in a compact and customizable format.',
         data: [
-          {
-            name: 'Basic',
-            path: '/components/ui-elements/avatars/Basic.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
           {
             name: 'Basic with Border',
             path: '/components/ui-elements/avatars/Basic with Border.html',
@@ -160,13 +102,6 @@ export const components = [
             height: 300,
             requiresJS: false,
           },
-          {
-            name: 'Basic with Text',
-            path: '/components/ui-elements/avatars/Basic with Text.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
         ],
         icon: UserCircle,
         tag: false,
@@ -175,8 +110,7 @@ export const components = [
       {
         name: 'Badges',
         link: '/components/ui-elements/badges',
-        description:
-          'Highlight statuses, labels, or notifications with small, colorful indicators.',
+        description: 'Highlight statuses, labels, or notifications with small, colorful indicators.',
         data: [
           {
             name: 'Basic',
@@ -200,36 +134,8 @@ export const components = [
             requiresJS: false,
           },
           {
-            name: 'Basic Themed',
-            path: '/components/ui-elements/badges/Basic Themed.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
             name: 'Flat',
             path: '/components/ui-elements/badges/Flat.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic with Icon',
-            path: '/components/ui-elements/badges/Flat with Icon.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic with Close Button',
-            path: '/components/ui-elements/badges/Flat with Close Button.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic Themed',
-            path: '/components/ui-elements/badges/Flat Themed.html',
             fullPage: false,
             height: 100,
             requiresJS: false,
@@ -242,8 +148,7 @@ export const components = [
       {
         name: 'Breadcrumbs',
         link: '/components/ui-elements/breadcrumbs',
-        description:
-          'Show the users navigation path and improve site structure visibility with breadcrumb trails.',
+        description: 'Show the users navigation path and improve site structure visibility with breadcrumb trails.',
         data: [
           {
             name: 'Basic',
@@ -281,8 +186,7 @@ export const components = [
       {
         name: 'Buttons',
         link: '/components/ui-elements/buttons',
-        description:
-          'Trigger actions with versatile, accessible, and customizable button components.',
+        description: 'Trigger actions with versatile, accessible, and customizable button components.',
         data: [
           {
             name: 'Basic',
@@ -299,127 +203,8 @@ export const components = [
             requiresJS: false,
           },
           {
-            name: 'Basic Compact',
-            path: '/components/ui-elements/buttons/Basic Compact.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic Compact Group',
-            path: '/components/ui-elements/buttons/Basic Compact Group.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic Inverted',
-            path: '/components/ui-elements/buttons/Basic Inverted.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic Inverted Group',
-            path: '/components/ui-elements/buttons/Basic Inverted Group.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic Inverted Compact',
-            path: '/components/ui-elements/buttons/Basic Inverted Compact.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic Inverted Compact Group',
-            path: '/components/ui-elements/buttons/Basic Inverted Compact Group.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
             name: 'Outlined',
             path: '/components/ui-elements/buttons/Outlined.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Outlined Group',
-            path: '/components/ui-elements/buttons/Outlined Group.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Outlined Compact',
-            path: '/components/ui-elements/buttons/Outlined Compact.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Outlined Compact Group',
-            path: '/components/ui-elements/buttons/Outlined Compact Group.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat',
-            path: '/components/ui-elements/buttons/Flat.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Group',
-            path: '/components/ui-elements/buttons/Flat Group.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Compact',
-            path: '/components/ui-elements/buttons/Flat Compact.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Compact Group',
-            path: '/components/ui-elements/buttons/Flat Compact Group.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Inverted',
-            path: '/components/ui-elements/buttons/Flat Inverted.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Inverted Group',
-            path: '/components/ui-elements/buttons/Flat Inverted Group.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Inverted Compact',
-            path: '/components/ui-elements/buttons/Flat Inverted Compact.html',
-            fullPage: false,
-            height: 100,
-            requiresJS: false,
-          },
-          {
-            name: 'Flat Inverted Compact Group',
-            path: '/components/ui-elements/buttons/Flat Inverted Compact Group.html',
             fullPage: false,
             height: 100,
             requiresJS: false,
@@ -432,8 +217,7 @@ export const components = [
       {
         name: 'Cards',
         link: '/components/ui-elements/cards',
-        description:
-          'Organize content into flexible containers, perfect for previews, profiles, or product info.',
+        description: 'Organize content into flexible containers, perfect for previews, profiles, or product info.',
         data: [
           {
             name: 'Basic',
@@ -484,13 +268,6 @@ export const components = [
             height: 300,
             requiresJS: false,
           },
-          {
-            name: 'Stats card 2',
-            path: '/components/ui-elements/cards/8.html',
-            fullPage: false,
-            height: 300,
-            requiresJS: false,
-          },
         ],
         icon: CreditCard,
         tag: false,
@@ -499,8 +276,7 @@ export const components = [
       {
         name: 'Cookies',
         link: '/components/ui-elements/cookies',
-        description:
-          'Notify users about cookie usage and consent with sleek, dismissible banners.',
+        description: 'Notify users about cookie usage and consent with sleek, dismissible banners.',
         data: [
           {
             name: 'With emoji',
@@ -524,8 +300,7 @@ export const components = [
       {
         name: 'Images',
         link: '/components/ui-elements/images',
-        description:
-          'Display images responsively with optional styling for aspect ratio, borders, and shadows.',
+        description: 'Display images responsively with optional styling for aspect ratio, borders, and shadows.',
         data: [
           {
             name: 'Basic',
@@ -561,49 +336,9 @@ export const components = [
         updated: false,
       },
       {
-        name: 'Modals',
-        link: '/components/ui-elements/modals',
-        description:
-          'Create layered dialogs for confirmations, forms, or extra content without navigating away.',
-        data: [
-          {
-            name: 'Basic with button',
-            path: '/components/ui-elements/modals/1.html',
-            fullPage: false,
-            height: 300,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic with button',
-            path: '/components/ui-elements/modals/2.html',
-            fullPage: false,
-            height: 300,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic with button',
-            path: '/components/ui-elements/modals/3.html',
-            fullPage: false,
-            height: 300,
-            requiresJS: false,
-          },
-          {
-            name: 'Basic with button',
-            path: '/components/ui-elements/modals/4.html',
-            fullPage: false,
-            height: 300,
-            requiresJS: false,
-          },
-        ],
-        icon: SquareDashedBottom,
-        tag: false,
-        updated: false,
-      },
-      {
         name: 'Paginations',
         link: '/components/ui-elements/pagination',
-        description:
-          'Divide content into manageable sections with navigable pagination controls.',
+        description: 'Divide content into manageable sections with navigable pagination controls.',
         data: [
           {
             name: 'Basic',
@@ -620,33 +355,11 @@ export const components = [
       {
         name: 'Tables',
         link: '/components/ui-elements/tables',
-        description:
-          'Present structured data with clean, styled, and responsive table layouts.',
+        description: 'Present structured data with clean, styled, and responsive table layouts.',
         data: [
           {
             name: 'Spaced',
             path: '/components/ui-elements/tables/1.html',
-            fullPage: false,
-            height: 500,
-            requiresJS: false,
-          },
-          {
-            name: 'Compact',
-            path: '/components/ui-elements/tables/2.html',
-            fullPage: false,
-            height: 500,
-            requiresJS: false,
-          },
-          {
-            name: 'Invoice',
-            path: '/components/ui-elements/tables/3.html',
-            fullPage: false,
-            height: 500,
-            requiresJS: false,
-          },
-          {
-            name: 'Invoice 2',
-            path: '/components/ui-elements/tables/4.html',
             fullPage: false,
             height: 500,
             requiresJS: false,
@@ -666,8 +379,7 @@ export const components = [
       {
         name: 'Forms',
         link: '/components/forms/forms',
-        description:
-          'Combine inputs, buttons, and layout components to build full-featured, accessible forms.',
+        description: 'Combine inputs, buttons, and layout components to build full-featured, accessible forms.',
         data: [
           {
             name: 'Contact Us',
@@ -684,26 +396,11 @@ export const components = [
       {
         name: 'Inputs',
         link: '/components/forms/inputs',
-        description:
-          'Collect user data with styled text fields, checkboxes, radios, and more.',
+        description: 'Collect user data with styled text fields, checkboxes, radios, and more.',
         data: [
           {
             name: 'Basic',
             path: '/components/forms/inputs/1.html',
-            fullPage: false,
-            height: 200,
-            requiresJS: false,
-          },
-          {
-            name: 'Input with button',
-            path: '/components/forms/inputs/2.html',
-            fullPage: false,
-            height: 200,
-            requiresJS: false,
-          },
-          {
-            name: 'Disabled',
-            path: '/components/forms/inputs/3.html',
             fullPage: false,
             height: 200,
             requiresJS: false,
@@ -716,8 +413,7 @@ export const components = [
       {
         name: 'Sign in',
         link: '/components/forms/sign-in',
-        description:
-          'Provide users with a secure, clean interface to log into their account.',
+        description: 'Provide users with a secure, clean interface to log into their account.',
         data: [
           {
             name: 'Basic',
@@ -734,8 +430,7 @@ export const components = [
       {
         name: 'Register',
         link: '/components/forms/register',
-        description:
-          'Allow users to create new accounts with a simple and user-friendly registration form.',
+        description: 'Allow users to create new accounts with a simple and user-friendly registration form.',
         data: [
           {
             name: 'Basic',
@@ -752,8 +447,7 @@ export const components = [
       {
         name: 'Skeleton',
         link: '/components/forms/skeleton',
-        description:
-          'Display animated placeholders while loading content to improve perceived performance.',
+        description: 'Display animated placeholders while loading content to improve perceived performance.',
         data: [
           {
             name: 'Basic',
@@ -764,243 +458,6 @@ export const components = [
           },
         ],
         icon: Loader,
-        tag: false,
-        updated: false,
-      },
-    ],
-  },
-  {
-    category: 'Pages',
-    category_slug: 'pages',
-    icon: FileText,
-    items: [
-      {
-        name: '404 Pages',
-        link: '/components/pages/404-pages',
-        description:
-          'Guide users back on track with visually engaging “Page Not Found” templates.',
-        data: [
-          {
-            name: 'Basic',
-            path: '/components/pages/404-pages/1.html',
-            fullPage: true,
-            height: 800,
-            requiresJS: false,
-          },
-        ],
-        icon: AlertTriangle,
-        tag: false,
-        updated: false,
-      },
-      {
-        name: 'Blog',
-        link: '/components/pages/blog',
-        description:
-          'Show blog posts with clean layouts optimized for readability and engagement.',
-        data: [
-          {
-            name: 'Basic with heading, image and text',
-            path: '/components/pages/blog/1.html',
-            fullPage: true,
-            height: 600,
-            requiresJS: false,
-          },
-        ],
-        icon: Newspaper,
-        tag: false,
-        updated: false,
-      },
-      {
-        name: 'Contact',
-        link: '/components/pages/contact',
-        description:
-          'Let users reach out with form-based or informational contact page designs.',
-        data: [
-          {
-            name: 'Simple with text and form',
-            path: '/components/pages/contact/1.html',
-            fullPage: true,
-            height: 700,
-            requiresJS: false,
-          },
-        ],
-        icon: Mail,
-        tag: false,
-        updated: false,
-      },
-      {
-        name: 'FAQ',
-        link: '/components/pages/faq',
-        description:
-          'Answer common questions clearly with toggle-based or list-based FAQ sections.',
-        data: [
-          {
-            name: 'Simple with expand',
-            path: '/components/pages/faq/1.html',
-            fullPage: true,
-            height: 400,
-            requiresJS: true,
-          },
-        ],
-        icon: HelpCircle,
-        tag: false,
-        updated: false,
-      },
-      {
-        name: 'Features',
-        link: '/components/pages/features',
-        description:
-          'Highlight product or service features with structured and attractive layouts.',
-        data: [
-          {
-            name: 'Simple with heading and feature blocks',
-            path: '/components/pages/features/1.html',
-            fullPage: true,
-            height: 500,
-            requiresJS: false,
-          },
-        ],
-        icon: Sparkles,
-        tag: false,
-        updated: false,
-      },
-      {
-        name: 'Heros',
-        link: '/components/pages/heros',
-        description:
-          'Create attention-grabbing headers for landing pages with call-to-action and imagery.',
-        data: [
-          {
-            name: 'Simple with image, text and buttons',
-            path: '/components/pages/heros/1.html',
-            fullPage: true,
-            height: 500,
-            requiresJS: false,
-          },
-          {
-            name: 'Simple with image, text and buttons 2',
-            path: '/components/pages/heros/2.html',
-            fullPage: true,
-            height: 600,
-            requiresJS: false,
-          },
-        ],
-        icon: ImageIcon,
-        tag: false,
-        updated: false,
-      },
-      {
-        name: 'Portfolio',
-        link: '/components/pages/portfolio',
-        description:
-          'Showcase projects, case studies, or work samples with elegant layouts.',
-        data: [
-          {
-            name: 'Simple with heading and hover effect',
-            path: '/components/pages/portfolio/1.html',
-            fullPage: true,
-            height: 800,
-            requiresJS: false,
-          },
-        ],
-        icon: Briefcase,
-        tag: false,
-        updated: false,
-      },
-      {
-        name: 'Pricing',
-        link: '/components/pages/pricing',
-        description:
-          'Compare plans or offers using visually balanced pricing tables and cards.',
-        data: [
-          {
-            name: 'Simple with heading',
-            path: '/components/pages/pricing/1.html',
-            fullPage: true,
-            height: 600,
-            requiresJS: false,
-          },
-        ],
-        icon: Tags,
-        tag: false,
-        updated: false,
-      },
-      {
-        name: 'Teams',
-        link: '/components/pages/teams',
-        description:
-          'Introduce team members with styled profiles, roles, and social links.',
-        data: [
-          {
-            name: 'Simple with heading and blocks',
-            path: '/components/pages/teams/1.html',
-            fullPage: true,
-            height: 400,
-            requiresJS: false,
-          },
-        ],
-        icon: Users,
-        tag: false,
-        updated: false,
-      },
-      {
-        name: 'Testimonials',
-        link: '/components/pages/testimonials',
-        description:
-          'Build trust with customer or client feedback in carousel or grid formats.',
-        data: [
-          {
-            name: 'Basic',
-            path: '/components/pages/testimonials/1.html',
-            fullPage: true,
-            height: 700,
-            requiresJS: false,
-          },
-        ],
-        icon: MessageSquare,
-        tag: false,
-        updated: false,
-      },
-    ],
-  },
-  {
-    category: 'Layouts',
-    category_slug: 'layouts',
-    icon: LayoutDashboard,
-    items: [
-      {
-        name: 'Layouts',
-        link: '/components/layouts/layouts',
-        description:
-          'Combine inputs, buttons, and layout components to build full-featured, accessible forms.',
-        data: [
-          {
-            name: 'Basic',
-            path: '/components/layouts/layouts/Basic.html',
-            fullPage: true,
-            height: 500,
-            requiresJS: true,
-          },
-        ],
-        icon: Grid2x2,
-        tag: true,
-        updated: false,
-      },
-      {
-        name: 'Footers',
-        link: '/components/layouts/footers',
-        description:
-          'Add site-wide footers with navigation, contact info, and legal links.',
-        data: [
-          {
-            name: 'Footers',
-            path: '/components/layouts/footers/Basic.html',
-            fullPage: true,
-            height: 400,
-            requiresJS: false,
-          },
-        ],
-        icon: PanelBottom,
         tag: false,
         updated: false,
       },
