@@ -50,3 +50,9 @@ public/components/sandbox
 .idea/jsLibraryMappings.xml
 .idea/workspace.xml
 .env*.local
+ 
+# Ignore sandbox HTML used for local demos
+/public/sandbox.html
+
+# Ignore built or local guide page used in src app
+/src/app/guide/page.tsx
