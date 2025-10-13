@@ -28,7 +28,7 @@ MonoUI requires no installation — simply choose a component you like, copy the
 3. Toggle the preview to show the source code and click the `</> Copy` button.
 4. Paste the copied code into your project.
 
-> All components support dark mode and are fully responsive on mobile, tablet, and desktop devices.
+> All components are fully responsive on mobile, tablet, and desktop devices.
 
 ## Components
 
@@ -57,20 +57,6 @@ MonoUI offers a wide variety of completely free components, with more planned fo
 - [Sign In](https://www.monoui.dev/components/forms/sign-in)
 - [Register](https://www.monoui.dev/components/forms/register)
 - [Skeleton](https://www.monoui.dev/components/forms/skeleton)
-
-### Pages
-
-- [404 Pages](https://www.monoui.dev/components/pages/404-pages)
-- [Blog](https://www.monoui.dev/components/pages/blog)
-- [Contact](https://www.monoui.dev/components/pages/contact)
-- [FAQ](https://www.monoui.dev/components/pages/faq)
-- [Features](https://www.monoui.dev/components/pages/features)
-- [Footers](https://www.monoui.dev/components/pages/footers)
-- [Heros](https://www.monoui.dev/components/pages/heros)
-- [Portfolio](https://www.monoui.dev/components/pages/portfolio)
-- [Pricing](https://www.monoui.dev/components/pages/pricing)
-- [Teams](https://www.monoui.dev/components/pages/teams)
-- [Testimonials](https://www.monoui.dev/components/pages/testimonials)
 
 ## Contributing
 
